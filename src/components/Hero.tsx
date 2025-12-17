@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from "react"
+import { Button } from "./ui/button"
 
 const slides = [
   {
@@ -74,13 +75,13 @@ export function Hero() {
             <br />
             {slides[currentSlide].subtitleLine2}
           </h1>
-          <button
+          <Button
             // size="lg"
             className="bg-stone-500 hover:bg-stone-600 text-white px-8 py-6 text-sm tracking-wider"
             onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
           >
             VIEW PACKAGES
-          </button>
+          </Button>
         </div>
       </div>
 

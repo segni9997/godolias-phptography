@@ -2,25 +2,26 @@
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { Button } from "./ui/button"
 
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const leftLinks = [
-    { to: "#home", label: "HOME" },
-    { to: "#about", label: "ABOUT" },
-    { to: "#services", label: "SERVICES" },
+    { to: "/", label: "HOME" },
+    { to: "/aboutus", label: "ABOUT" },
+    { to: "/services", label: "SERVICES" },
   ]
 
   const rightLinks = [
-    { to: "#portfolio", label: "PORTFOLIO" },
-    { to: "#blog", label: "BLOG" },
-    { to: "#contact", label: "CONTACT" },
+    { to: "/portfolio", label: "PORTFOLIO" },
+    { to: "/blogs", label: "BLOG" },
+    { to: "/contact", label: "CONTACT" },
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-200">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Desktop Navigation - Left Links */}
@@ -38,7 +39,7 @@ export function Navbar() {
 
           {/* Center Logo */}
           <Link to="/" className="flex flex-col items-center">
-            <div className="font-['Playfair_Display'] italic text-2xl text-stone-800">Tessa Morgan</div>
+            <div className="font-['Playfair_Display'] italic text-2xl text-stone-800">Godolias</div>
             <div className="text-[10px] tracking-[0.2em] text-stone-500 uppercase">Photography</div>
           </Link>
 
@@ -56,9 +57,9 @@ export function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <button   className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          </Button>
         </div>
 
         {/* Mobile Navigation */}
