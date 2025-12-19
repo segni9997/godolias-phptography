@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
+
 export interface items {
 heading:string;
 img:string
@@ -11,9 +14,23 @@ interface BlogCardsProps {
 
 export default function BlogCards({ items }: BlogCardsProps) {
   return (
-    <div className="grid gap-8 md:grid-cols-2 ">
+    <motion.div
+      className="grid gap-8 md:grid-cols-2 "
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.2,
+          },
+        },
+      }}
+    >
       {items.map((item, index) => (
-        <article
+        <motion.article
           key={index}
           className="group overflow-hidden w-[550px] bg-stone-200  shadow-lg border-8 border-white "
         >
@@ -48,6 +65,7 @@ export default function BlogCards({ items }: BlogCardsProps) {
               {item.description}
             </p>
 <div className="mx-auto">
+         <Link to ={`/blogs/${item.heading}`}>
             <button
   className="
     mt-4 inline-flex items-center gap-2
@@ -59,12 +77,13 @@ export default function BlogCards({ items }: BlogCardsProps) {
   Read more
   <span className="transition-transform group-hover:translate-x-1">→</span>
 </button>
+         </Link>
 </div>
           </div>
           
-        </article>
+        </motion.article>
       ))}
-      
-    </div>
+
+    </motion.div>
   );
 }

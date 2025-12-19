@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react"
-import { Button } from "./ui/button"
+import { motion } from "framer-motion"
 
 const slides = [
   {
@@ -46,7 +46,7 @@ export function Hero() {
   }, [])
 
   return (
-    <section id="home" className="relative h-[90vh] pt-20 overflow-hidden w-8xl">
+    <motion.section id="home" className="relative h-[90vh] pt-20 overflow-hidden w-8xl">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -64,25 +64,40 @@ export function Hero() {
       ))}
 
       <div className="relative h-full flex items-center justify-center">
-        <div
+        <motion.div
           className={`text-center text-white px-4 transition-opacity duration-500 ${
             isTransitioning ? "opacity-0" : "opacity-100"
           }`}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
         >
-          <div className="text-sm tracking-[0.3em] uppercase mb-4 text-amber-200/90">{slides[currentSlide].title}</div>
-          <h1 className="text-5xl md:text-7xl font-serif leading-tight mb-8 text-balance">
+          <motion.div
+            className="text-sm tracking-[0.3em] uppercase mb-4 text-amber-200/90"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+          >
+            {slides[currentSlide].title}
+          </motion.div>
+          <motion.h1
+            className="text-5xl md:text-7xl font-serif leading-tight mb-8 text-balance"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.9 }}
+          >
             {slides[currentSlide].subtitle}
             <br />
             {slides[currentSlide].subtitleLine2}
-          </h1>
-          <Button
-            // size="lg"
-            className="bg-stone-500 hover:bg-stone-600 text-white px-8 py-6 text-sm tracking-wider"
-            onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+          </motion.h1>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.2 }}
           >
-            VIEW PACKAGES
-          </Button>
-        </div>
+        
+          </motion.div>
+        </motion.div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
@@ -103,6 +118,6 @@ export function Hero() {
           />
         ))}
       </div>
-    </section>
+    </motion.section>
   )
 }

@@ -40,7 +40,7 @@ export function Navbar() {
           {/* Center Logo */}
           <Link to="/" className="flex flex-col items-center">
             <div className="font-['Playfair_Display'] italic text-2xl text-stone-800">Godolias</div>
-            <div className="text-[10px] tracking-[0.2em] text-stone-500 uppercase">Photography</div>
+            <div className="text-[10px] tracking-[0.2em] text-stone-500 uppercase"> photo video & Bridal</div>
           </Link>
 
           {/* Desktop Navigation - Right Links */}

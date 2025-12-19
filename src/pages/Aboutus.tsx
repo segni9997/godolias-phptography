@@ -25,7 +25,7 @@ export default function AboutPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white-50">
 
       {/* Hero Image */}
         <section className="relative h-[50vh] overflow-hidden">
@@ -40,10 +40,10 @@ export default function AboutPage() {
       {/* My Story Section */}
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-xs tracking-[0.3em] text-stone-400 uppercase mb-4">About</p>
-          <h1 className="font-['Playfair_Display'] text-4xl md:text-5xl text-stone-800 mb-12">My Story</h1>
+          <p className="text-xs tracking-[0.3em] text-black-400 uppercase mb-4">About</p>
+          <h1 className="font-['Playfair_Display'] text-4xl md:text-5xl text-black-800 mb-12">My Story</h1>
 
-          <div className="space-y-6 text-stone-600 leading-relaxed">
+          <div className="space-y-6 text-black-600 leading-relaxed">
             <p>
               My passion for photography began as a glimpse of what I now see and all the lovely emotions I feel.
               Getting to document the marriage and commitment of two people coming together is fuling knowing that
@@ -66,10 +66,10 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-12">
-            <p className="font-['Playfair_Display'] italic text-3xl text-stone-800 mb-6">Tessa M</p>
+            <p className="font-['Playfair_Display'] italic text-3xl text-black-800 mb-6">Tessa M</p>
             <Button
               asChild
-              className="bg-[#a89074] hover:bg-[#968060] text-white px-8 py-6 text-xs tracking-wider uppercase"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-xs tracking-wider uppercase"
             >
               <Link to="/portfolio">Learn More</Link>
             </Button>
@@ -96,9 +96,9 @@ export default function AboutPage() {
       </section>
 
       {/* Guarantee Section */}
-      <section className="py-20 px-4 bg-[#f5f1ed]">
+      <section className="py-20 px-4 bg-white-50">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="font-['Playfair_Display'] text-2xl md:text-3xl text-stone-800 leading-relaxed">
+          <p className="font-['Playfair_Display'] text-2xl md:text-3xl text-black-800 leading-relaxed">
             "I Guarantee Stunning, High-Quality Wedding Photos that Will Perfectly Capture The Magic Of Your Special
             Day, Or Your Money Back."
           </p>
@@ -111,11 +111,11 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <p className="text-xs tracking-[0.3em] text-stone-400 uppercase mb-4">Crafting Memories</p>
-              <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl text-stone-800 mb-8">
+              <p className="text-xs tracking-[0.3em] text-black-400 uppercase mb-4">Crafting Memories</p>
+              <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl text-black-800 mb-8">
                 Your Story, My Lens
               </h2>
-              <p className="text-stone-600 leading-relaxed mb-8">
+              <p className="text-black-600 leading-relaxed mb-8">
                 Your wedding day deserves to be immortalized with all the romance, love and excitement that makes it
                 unique. From candid moments to the big moments, I work to ensure each photograph captures the story
                 you'll want to relive for generations to come. Every frame is thoughtfully crafted with both artistry
@@ -123,7 +123,7 @@ export default function AboutPage() {
               </p>
               <Button
                 asChild
-                className="bg-[#a89074] hover:bg-[#968060] text-white px-8 py-6 text-xs tracking-wider uppercase"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-xs tracking-wider uppercase"
               >
                 <Link to="/portfolio">View Portfolio</Link>
               </Button>
