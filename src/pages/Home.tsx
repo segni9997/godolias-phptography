@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-     <div className="max-w-7xl mx-auto mt-10 bg-[#e25727}">
+     <div className=" mx-auto mt-10 ">
      <Hero/>
      <About/>
      <Services/>

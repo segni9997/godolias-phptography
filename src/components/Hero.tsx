@@ -46,7 +46,7 @@ export function Hero() {
   }, [])
 
   return (
-    <motion.section id="home" className="relative h-[90vh] pt-20 overflow-hidden w-8xl">
+    <motion.section id="home" className="relative h-[90vh] pt-20 overflow-hidden  ">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -59,7 +59,7 @@ export function Hero() {
             alt={`Slide ${index + 1}`}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0  bg-linear-to-t from-black" />
         </div>
       ))}
 

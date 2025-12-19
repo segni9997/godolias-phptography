@@ -41,7 +41,7 @@ export function Services() {
   return (
     <motion.section
       id="services"
-      className="py-24 bg-white"
+      className="py-24 bg-black/50"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
@@ -49,10 +49,10 @@ export function Services() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div className="text-center mb-16" variants={itemVariants}>
-          <div className="text-xs tracking-[0.3em] uppercase text-black-500 mb-4">
+          <div className="text-xs tracking-[0.3em] uppercase text-orange-400 mb-4">
             Services
           </div>
-          <h2 className="text-4xl md:text-5xl font-serif text-black-800">
+          <h2 className="text-4xl md:text-5xl font-serif text-orange-200">
             Photography Packages
           </h2>
         </motion.div>
@@ -68,7 +68,7 @@ export function Services() {
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <Card className="overflow-hidden border-0 shadow-lg group">
+              <Card className="overflow-hidden border-0 shadow-lg group pt-0 bg-black/30  ">
                 <CardContent className="p-0">
                   <div className="relative h-80 overflow-hidden">
                     <img
@@ -77,17 +77,17 @@ export function Services() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <div className="p-8 text-center bg-white">
-                    <h3 className="text-2xl font-serif text-stone-800 mb-6">
+                  <div className="p-8 text-center ">
+                    <h3 className="text-2xl font-serif text-orange-400 mb-6">
                       {pkg.title}
                     </h3>
                     <div className="w-12 h-px bg-black-300 mx-auto mb-6" />
-                    <Button
+                    {/* <Button
                       variant="link"
-                      className="text-black-600 hover:text-black-900 text-sm tracking-wider"
+                      className="text-orange-400 hover:text-orange-900 text-sm tracking-wider"
                     >
                       Learn More
-                    </Button>
+                    </Button> */}
                   </div>
                 </CardContent>
               </Card>
@@ -105,7 +105,7 @@ export function Services() {
         </motion.div>
       </div>
       <motion.div
-        className="relative mt-4 bg-accent overflow-hidden"
+        className="relative mt-4 bg-black/50 overflow-hidden"
         variants={itemVariants}
       >
         {/* CAPTION BOX */}
@@ -151,7 +151,7 @@ export function Services() {
             />
 
             {/* Optional dark overlay for better text contrast */}
-            <div className="absolute inset-0 bg-black/20"></div>
+            <div className="absolute inset-0 bg-radial from-transparent to-black"></div>
           </div>
         </div>
       </motion.div>

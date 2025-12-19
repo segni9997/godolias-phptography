@@ -26,16 +26,16 @@ export function About() {
   return (
     <motion.section
       id="about"
-      className="py-24 bg-white-50"
+      className="py-24 bg-black"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariants}
     >
       <motion.div className="mb-5" variants={itemVariants}>
-        <div className="text-xs tracking-[0.3em] uppercase text-stone-500 text-center">Award Winning</div>
+        <div className="text-xs tracking-[0.3em] uppercase text-orange-400 text-center">Award Winning</div>
 
-        <h2 className="text-4xl md:text-5xl font-serif text-center text-stone-800 leading-tight text-balance">
+        <h2 className="text-4xl md:text-5xl font-serif text-center text-orange-200 leading-tight text-balance">
           Experience The Perfect Blend
           <br />
           Of Creativity And Elegance In
@@ -62,12 +62,12 @@ export function About() {
             variants={containerVariants}
           >
             <motion.div className="flex justify-center" variants={itemVariants}>
-              <Quote className="w-24 h-24 text-black-300" />
+              <Quote className="w-24 h-24 text-white/50 rotate-180" />
             </motion.div>
 
             <motion.div className="pt-2" variants={itemVariants}>
-              <h3 className="text-4xl font-serif text-black-800 mb-4">Hello, My Name Is Godolias</h3>
-              <p className="text-black-600 leading-relaxed mb-6">
+              <h3 className="text-4xl font-serif text-white/80 mb-4">Hello, We are Godolias</h3>
+              <p className="text-white leading-relaxed mb-6 mx-auto  text-lg">
                 I am a professional photographer based in beautiful Ethiopia. With over a decade of
                 experience, I've had the privilege of capturing love stories through my lens. I believe in creating
                 timeless images that speak volumes about the joy, passion, and romance of your special day. I strive to

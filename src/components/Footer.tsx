@@ -19,16 +19,16 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-stone-50 border-t border-stone-200">
+    <footer className="bg-black/90 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="text-2xl font-serif italic text-stone-800 mb-2">Godolias</div>
-          <div className="text-xs tracking-widest text-stone-500 uppercase">Photography</div>
+          <div className="text-2xl font-serif italic text-orange-800 mb-2">Godolias</div>
+          <div className="text-xs tracking-widest text-orange-500 uppercase">photo video & Bridal</div>
         </div>
 
         {/* Description */}
-        <p className="text-center text-stone-600 text-sm max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-center text-orange-600 text-sm max-w-2xl mx-auto mb-8 leading-relaxed">
           Godolias is a freelance wedding photographer who specializes in creating art through beautiful, authentic
           images. She listens carefully to your story, capturing every moment, big or small. Her passion for life and
           capturing authentic moments creates art that tells a powerful story.
@@ -40,7 +40,7 @@ export function Footer() {
             <Link
               key={item.name}
               to={item.to}
-              className="text-xs tracking-wider text-stone-600 hover:text-stone-900 transition-colors"
+              className="text-xs tracking-wider text-orange-600 hover:text-orange-900 transition-colors"
             >
               {item.name}
             </Link>
@@ -53,15 +53,15 @@ export function Footer() {
             <Link
               key={index}
               to={social.to}
-              className="w-10 h-10 flex items-center justify-center bg-stone-200 hover:bg-stone-300 transition-colors"
+              className="w-10 h-10 flex items-center justify-center bg-orange-200 hover:bg-orange-300 transition-colors"
             >
-              <social.icon className="w-4 h-4 text-stone-600" />
+              <social.icon className="w-4 h-4 text-orange-600" />
             </Link>
           ))}
         </div>
 
         {/* Copyright */}
-        <div className="text-center text-xs text-stone-500">© {new Date().getFullYear()} Godolias Photography</div>
+        <div className="text-center text-xs text-orange-500">© {new Date().getFullYear()} Godolias photo video & Bridal</div>
       </div>
     </footer>
   )

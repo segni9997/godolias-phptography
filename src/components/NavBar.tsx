@@ -21,7 +21,7 @@ export function Navbar() {
   ]
 
   return (
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-200">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Desktop Navigation - Left Links */}
@@ -30,7 +30,7 @@ export function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-xs tracking-wider text-stone-600 hover:text-stone-900 transition-colors uppercase"
+                className="text-xs tracking-wider text-orange-400 hover:text-orange-900 transition-colors uppercase"
               >
                 {link.label}
               </Link>
@@ -39,8 +39,8 @@ export function Navbar() {
 
           {/* Center Logo */}
           <Link to="/" className="flex flex-col items-center">
-            <div className="font-['Playfair_Display'] italic text-2xl text-stone-800">Godolias</div>
-            <div className="text-[10px] tracking-[0.2em] text-stone-500 uppercase"> photo video & Bridal</div>
+            <div className="font-['Playfair_Display'] italic text-2xl text-orange-400 hover:text-orange-900">Godolias</div>
+            <div className="text-[10px] tracking-[0.2em] text-orange-400 hover:text-orange-900 uppercase"> photo video & Bridal</div>
           </Link>
 
           {/* Desktop Navigation - Right Links */}
@@ -49,7 +49,7 @@ export function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-xs tracking-wider text-stone-600 hover:text-stone-900 transition-colors uppercase"
+                className="text-xs tracking-wider text-orange-400 hover:text-orange-900 transition-colors uppercase"
               >
                 {link.label}
               </Link>

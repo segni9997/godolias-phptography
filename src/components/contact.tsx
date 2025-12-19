@@ -20,19 +20,19 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 bg-white">
+    <section id="contact" className="py-24 bg-black/90">
           <section className="relative h-[50vh] overflow-hidden">
         <img
           src="/bride-with-flower-crown-close-up-portrait.jpg"
           alt="Portfolio hero"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-white via-white/70  to-transparent " />
+        <div className="absolute inset-0 bg-radial from-transparent via-black/50 to-black " />
       </section>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <div className="text-xs tracking-[0.3em] uppercase text-stone-500 mb-4">Get In Touch</div>
-          <h2 className="text-4xl md:text-5xl font-serif text-stone-800">Enquire Now</h2>
+        <div className="text-center my-16 ">
+          <div className="text-xs tracking-[0.3em] uppercase text-orange-500 mb-4">Get In Touch</div>
+          <h2 className="text-4xl md:text-5xl font-serif text-orange-800">Enquire Now</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -44,7 +44,7 @@ export function Contact() {
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="border-stone-300 bg-stone-50"
+                className="border-orange-300 bg-orange-50"
               />
             </div>
             <div>
@@ -53,7 +53,7 @@ export function Contact() {
                 placeholder="Email Address"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="border-stone-300 bg-stone-50"
+                className="border-orange-300 bg-orange-50"
               />
             </div>
             <div>
@@ -62,10 +62,10 @@ export function Contact() {
                 rows={6}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="border-stone-300 bg-stone-50"
+                className="border-orange-300 bg-orange-50"
               />
             </div>
-            <Button type="submit" className="w-full bg-stone-500 hover:bg-stone-600 text-white">
+            <Button type="submit" className="w-full bg-orange-500 hover:bg-orange-600 text-white">
               SEND
             </Button>
           </form>

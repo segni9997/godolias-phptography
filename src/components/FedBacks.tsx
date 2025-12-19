@@ -27,7 +27,7 @@ export default function FeedBack() {
   }, []);
 
   return (
-    <div className="grid md:grid-cols-3 gap-8">
+    <div className="grid md:grid-cols-3 gap-8 bg-black">
 
       {/* LEFT IMAGE */}
       <div className="hidden md:block relative h-[500px]">
