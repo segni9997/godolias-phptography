@@ -58,7 +58,7 @@ export function Navbar() {
 
           {/* Mobile menu button */}
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isOpen ? <X className="h-6  text-orange-400 w-6" /> : <Menu className="h-6 w-6 text-orange-400 " />}
           </Button>
         </div>
 
@@ -69,7 +69,7 @@ export function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
-                className="block text-sm tracking-wider text-stone-600 hover:text-stone-900 transition-colors uppercase"
+                className="block text-sm tracking-wider text-orange-300 hover:text-orange-500 transition-colors uppercase"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
