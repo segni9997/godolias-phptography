@@ -11,7 +11,7 @@ const blogData: items[] = [
   },
   {
     heading: "Luxury Event Styling Trends",
-    img: "/professional-woman-portrait-white-blazer.jpg",
+    img: "/professional-woman-portrait-background-blazer.jpg",
     description: "Modern styling ideas that elevate any event.",
     date: "2025-02-28",
     category: "Styling",
@@ -58,7 +58,7 @@ export default function Blog() {
           alt="Portfolio hero"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-white via-white/70 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-background via-background/70 to-transparent" />
       </motion.section>
       <div className="max-w-7xl mx-auto mt-10">
         <motion.div

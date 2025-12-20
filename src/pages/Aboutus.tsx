@@ -25,7 +25,7 @@ export default function AboutPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-white-50">
+    <div className="min-h-screen bg-background">
 
       {/* Hero Image */}
         <section className="relative h-[50vh] overflow-hidden">
@@ -34,16 +34,16 @@ export default function AboutPage() {
           alt="Portfolio hero"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-white via-white/70  to-transparent " />
+        <div className="absolute inset-0 bg-linear-to-t from-background via-background/70  to-transparent " />
       </section>
 
       {/* My Story Section */}
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-xs tracking-[0.3em] text-black-400 uppercase mb-4">About</p>
-          <h1 className="font-['Playfair_Display'] text-4xl md:text-5xl text-black-800 mb-12">My Story</h1>
+          <p className="text-xs tracking-[0.3em] text-primary uppercase mb-4">About</p>
+          <h1 className="font-['Playfair_Display'] text-4xl md:text-5xl text-secondary mb-12">My Story</h1>
 
-          <div className="space-y-6 text-black-600 leading-relaxed">
+          <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
               My passion for photography began as a glimpse of what I now see and all the lovely emotions I feel.
               Getting to document the marriage and commitment of two people coming together is fuling knowing that
@@ -66,10 +66,10 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-12">
-            <p className="font-['Playfair_Display'] italic text-3xl text-black-800 mb-6">Tessa M</p>
+            <p className="font-['Playfair_Display'] italic text-3xl text-primary mb-6">Godolias</p>
             <Button
               asChild
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-xs tracking-wider uppercase"
+              className="bg-primary hover:bg-secondary text-foreground px-8 py-6 text-xs tracking-wider uppercase"
             >
               <Link to="/portfolio">Learn More</Link>
             </Button>
@@ -111,8 +111,8 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <p className="text-xs tracking-[0.3em] text-black-400 uppercase mb-4">Crafting Memories</p>
-              <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl text-black-800 mb-8">
+              <p className="text-xs tracking-[0.3em] text-primary- uppercase mb-4">Crafting Memories</p>
+              <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl text-primary/90 mb-8">
                 Your Story, My Lens
               </h2>
               <p className="text-black-600 leading-relaxed mb-8">
@@ -123,7 +123,7 @@ export default function AboutPage() {
               </p>
               <Button
                 asChild
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-xs tracking-wider uppercase"
+                className="bg-primary hover:bg-secondary text-foreground px-8 py-6 text-xs tracking-wider uppercase"
               >
                 <Link to="/portfolio">View Portfolio</Link>
               </Button>

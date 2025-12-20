@@ -1,11 +1,18 @@
 
 import { MapPin, Phone } from "lucide-react"
 
-export function Contact() {
+export function ContactPage() {
 
   return (
     <section id="contact" className="py-24 bg-background">
-   
+          <section className="relative h-[50vh] overflow-hidden">
+        <img
+          src="/bride-with-flower-crown-close-up-portrait.jpg"
+          alt="Portfolio hero"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-linear-to-t from-background via-background/70 to-transparent " />
+      </section>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center my-16 ">
           <div className="text-xs tracking-[0.3em] uppercase text-primary mb-4">Get In Touch</div>

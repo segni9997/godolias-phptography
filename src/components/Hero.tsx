@@ -59,13 +59,13 @@ export function Hero() {
             alt={`Slide ${index + 1}`}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0  bg-linear-to-t from-black" />
+          <div className="absolute inset-0  bg-linear-to-t from-background" />
         </div>
       ))}
 
       <div className="relative h-full flex items-center justify-center">
         <motion.div
-          className={`text-center text-white px-4 transition-opacity duration-500 ${
+          className={`text-center text-foreground px-4 transition-opacity duration-500 ${
             isTransitioning ? "opacity-0" : "opacity-100"
           }`}
           initial={{ opacity: 0, y: 50 }}
@@ -73,7 +73,7 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <motion.div
-            className="text-sm tracking-[0.3em] uppercase mb-4 text-amber-200/90"
+            className="text-lg tracking-[0.3em] uppercase mb-4 text-secondary"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
@@ -112,7 +112,7 @@ export function Hero() {
               }, 500)
             }}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentSlide ? "bg-white w-8" : "bg-white/50 hover:bg-white/75"
+              index === currentSlide ? "bg-foreground w-8" : "bg-foreground/50 hover:bg-foreground/75"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

@@ -127,7 +127,7 @@ const { id } = useParams<{ id: string }>()
 
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
 
       {/* Hero Image */}
       <section className="relative h-[40vh] overflow-hidden">
@@ -139,19 +139,19 @@ const { id } = useParams<{ id: string }>()
       </section>
 
       {/* Portfolio Details */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <div className="text-xs tracking-[0.3em] uppercase text-stone-400 mb-4">PORTFOLIO</div>
+            <div className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">PORTFOLIO</div>
             <h1 className="text-4xl md:text-5xl font-serif text-stone-800 mb-6">{item.names}</h1>
             <div className="flex items-center justify-center gap-8 text-sm">
               <div>
-                <span className="text-stone-500">Date: </span>
-                <span className="font-serif text-stone-400">{item.date}</span>
+                <span className="text-muted-foreground/90">Date: </span>
+                <span className="font-serif text-muted-foreground">{item.date}</span>
               </div>
               <div>
-                <span className="text-stone-500">Category: </span>
-                <span className="font-serif text-stone-600">{item.category}</span>
+                <span className="text-muted-foreground/90">Category: </span>
+                <span className="font-serif text-muted-foreground/80">{item.category}</span>
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ const { id } = useParams<{ id: string }>()
 
           {/* Description */}
           <div className="max-w-2xl mx-auto text-center mb-16">
-            <p className="text-stone-600 leading-relaxed">{item.description}</p>
+            <p className="text-muted-foreground/80 leading-relaxed">{item.description}</p>
           </div>
 
           {/* Photo Gallery */}

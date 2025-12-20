@@ -27,25 +27,25 @@ export default function FeedBack() {
   }, []);
 
   return (
-    <div className="grid md:grid-cols-3 gap-8 bg-black">
+    <div className="grid md:grid-cols-3 gap-8 bg-background">
 
       {/* LEFT IMAGE */}
       <div className="hidden md:block relative h-[500px]">
-        <div className="absolute bottom-44 -left-7 h-32 border-8 border-stone-300 w-1/3 z-10">
+        <div className="absolute bottom-44 -left-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
           <img
             src="/elegant-birthday-party-celebration-balloons.jpg"
             alt="Client photo 1"
             className="h-full w-full object-cover"
           />
         </div>  
-         <div className="absolute bottom-1 h-64 border-8 border-stone-300 w-full">
+         <div className="absolute bottom-1 h-64 border-8 border-muted-foreground/80 w-full">
           <img
             src="/elegant-birthday-party-celebration-balloons.jpg"
             alt="Client photo 1"
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="absolute -bottom-12 -right-7 h-32 border-8 border-stone-300 w-1/3 z-10">
+        <div className="absolute -bottom-12 -right-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
           <img
             src="/elegant-birthday-party-celebration-balloons.jpg"
             alt="Client photo 1"
@@ -73,7 +73,7 @@ export default function FeedBack() {
 
             {/* CAPTION */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full
-                            bg-black/60 backdrop-blur-md
+                            bg-background/60 backdrop-blur-md
                             text-white
                             px-5 py-3
                             
@@ -88,7 +88,7 @@ export default function FeedBack() {
 
       {/* RIGHT IMAGE */}
       {/* <div className="relative h-64">
-        <div className="absolute bottom-1 h-52 border-8 border-stone-300 w-full">
+        <div className="absolute bottom-1 h-52 border-8 border-muted-foreground/80 w-full">
           <img
             src="/professional-woman-portrait-white-blazer.jpg"
             alt="Client photo 3"
@@ -98,21 +98,21 @@ export default function FeedBack() {
         </div>
       </div> */}
   <div className="hidden md:block relative h-[500px]">
-        <div className="absolute bottom-44 -right-7 h-32 border-8 border-stone-300 w-1/3 z-10">
+        <div className="absolute bottom-44 -right-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
           <img
              src="/professional-woman-portrait-white-blazer.jpg"
             alt="Client photo 1"
             className="h-full w-full object-cover"
           />
         </div>  
-         <div className="absolute bottom-1 h-64 border-8 border-stone-300 w-full">
+         <div className="absolute bottom-1 h-64 border-8 border-muted-foreground/80 w-full">
           <img
              src="/professional-woman-portrait-white-blazer.jpg"
             alt="Client photo 1"
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="absolute -bottom-12 -left-7 h-32 border-8 border-stone-300 w-1/3 z-10">
+        <div className="absolute -bottom-12 -left-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
           <img
              src="/professional-woman-portrait-white-blazer.jpg"
             alt="Client photo 1"

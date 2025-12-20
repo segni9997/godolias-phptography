@@ -35,7 +35,7 @@ const portfolioItems = [
     category: "Portrait",
     date: "Mar 22 2024",
     description:
-      "A sophisticated portrait session capturing Stacy's confident and professional persona. The clean, minimalist approach highlights her natural beauty and charismatic personality through timeless black and white photography.",
+      "A sophisticated portrait session capturing Stacy's confident and professional persona. The clean, minimalist approach highlights her natural beauty and charismatic personality through timeless background and white photography.",
     image: "/professional-woman-portrait-white-blazer.jpg",
     thumbnail: "/professional-woman-portrait-white-blazer.jpg",
   },
@@ -119,24 +119,24 @@ export function Portfolio() {
   }
 
   return (
-    <section id="portfolio" className="py-24 bg-black/90">
+    <section id="portfolio" className="py-24 bg-background/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="text-xs tracking-[0.3em] uppercase text-orange-500 mb-4">Portfolio</div>
-          <h2 className="text-4xl md:text-5xl font-serif text-orange-800">Featured Story</h2>
+          <div className="text-xs tracking-[0.3em] uppercase text-primary mb-4">Portfolio</div>
+          <h2 className="text-4xl md:text-5xl font-serif text-secondary">Featured Story</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Content - Left Side */}
           <div className={`space-y-6 transition-opacity duration-500 ${isAnimating ? "opacity-0" : "opacity-100"}`}>
-            <div className="text-8xl md:text-9xl font-serif text-orange-200">{currentItem.number}</div>
+            <div className="text-8xl md:text-9xl font-serif text-secondary">{currentItem.number}</div>
             <div>
-              <div className="text-sm tracking-wider uppercase text-orange-400 mb-2">{currentItem.category}</div>
-              <h3 className="text-3xl font-serif text-orange-800">{currentItem.names}</h3>
+              <div className="text-sm tracking-wider uppercase text-primary mb-2">{currentItem.category}</div>
+              <h3 className="text-3xl font-serif text-primary">{currentItem.names}</h3>
             </div>
-            <p className="text-orange-600 leading-relaxed">{currentItem.description}</p>
+            <p className="text-secondary leading-relaxed">{currentItem.description}</p>
             <Link to={`/portfolio/${currentItem.id}`}>
-              <Button variant="outline" className="border-orange-400 text-orange-700 hover:bg-orange-100 bg-transparent">
+              <Button variant="outline" className="border-primary text-secondary hover:bg-primary/20 bg-transparent">
                 VIEW GALLERY
               </Button>
             </Link>
@@ -145,7 +145,7 @@ export function Portfolio() {
             <div className="flex items-center gap-6 pt-6">
               <button
                 onClick={handlePrev}
-                className="text-orange-500 hover:text-orange-800 transition-colors"
+                className="text-secondary hover:text-primary transition-colors"
                 aria-label="Previous"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -158,7 +158,7 @@ export function Portfolio() {
                     key={index}
                     onClick={() => goToSlide(index)}
                     className={`h-2 rounded-full transition-all ${
-                      index === currentIndex ? "w-8 bg-orange-600" : "w-2 bg-orange-300"
+                      index === currentIndex ? "w-8 bg-primary" : "w-2 bg-secondary"
                     }`}
                     aria-label={`Go to slide ${index + 1}`}
                   />
@@ -166,7 +166,7 @@ export function Portfolio() {
               </div>
               <button
                 onClick={handleNext}
-                className="text-orange-500 hover:text-orange-800 transition-colors"
+                className="text-secondary hover:text-primary transition-colors"
                 aria-label="Next"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -191,13 +191,13 @@ export function Portfolio() {
         {/* View All Portfolio Link */}
         <div className="mt-16 text-center">
           <Link to="/portfolio">
-            <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8">VIEW ALL PORTFOLIO</Button>
+            <Button className="bg-primary-600 hover:bg-primary-700 text-background px-8">VIEW ALL PORTFOLIO</Button>
           </Link>
         </div>
       </div>
-          <div className="mt-24 bg-black p-8 md:p-12">
+          <div className="mt-24 bg-background p-8 md:p-12">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-serif text-orange-800 mb-4">What Clients Are Saying</h3>
+            <h3 className="text-3xl font-serif text-primary mb-4">What Clients Are Saying</h3>
           </div>
 
           <FeedBack/>

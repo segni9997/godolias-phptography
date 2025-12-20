@@ -41,7 +41,7 @@ export function Services() {
   return (
     <motion.section
       id="services"
-      className="py-24 bg-black/50"
+      className="py-24 bg-background"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
@@ -49,10 +49,10 @@ export function Services() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div className="text-center mb-16" variants={itemVariants}>
-          <div className="text-xs tracking-[0.3em] uppercase text-orange-400 mb-4">
+          <div className="text-xs tracking-[0.3em] uppercase text-primary mb-4">
             Services
           </div>
-          <h2 className="text-4xl md:text-5xl font-serif text-orange-200">
+          <h2 className="text-4xl md:text-5xl font-serif text-secondary">
             Photography Packages
           </h2>
         </motion.div>
@@ -68,7 +68,7 @@ export function Services() {
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <Card className="overflow-hidden border-0 shadow-lg group pt-0 bg-black/30  ">
+              <Card className="overflow-hidden border-0 shadow-lg group pt-0 bg-background/30  ">
                 <CardContent className="p-0">
                   <div className="relative h-80 overflow-hidden">
                     <img
@@ -81,7 +81,7 @@ export function Services() {
                     <h3 className="text-2xl font-serif text-orange-400 mb-6">
                       {pkg.title}
                     </h3>
-                    <div className="w-12 h-px bg-black-300 mx-auto mb-6" />
+                    <div className="w-12 h-px bg-background-300 mx-auto mb-6" />
                     {/* <Button
                       variant="link"
                       className="text-orange-400 hover:text-orange-900 text-sm tracking-wider"
@@ -98,14 +98,14 @@ export function Services() {
         <motion.div className="text-center" variants={itemVariants}>
           <Button
             size="lg"
-            className="bg-orange-500 hover:bg-orange-600 text-white px-8"
+            className="bg-primary hover:bg-primary-foreground px-8"
           >
             VIEW DETAILS
           </Button>
         </motion.div>
       </div>
       <motion.div
-        className="relative mt-4 bg-black/50 overflow-hidden"
+        className="relative mt-4 bg-background overflow-hidden"
         variants={itemVariants}
       >
         {/* CAPTION BOX */}
@@ -118,7 +118,7 @@ export function Services() {
             z-20
             w-[90%] md:w-96
             md:h-96
-            md:bg-white/60 bg-white/55 backdrop-blur-md
+            md:bg-primary bg-primary/70 backdrop-blur-md
             p-6
             rounded-xl
             shadow-xl
@@ -128,11 +128,11 @@ export function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h1 className="text-3xl md:text-4xl font-bold text-primary-foreground">
             Creative, Passionate, Artisan.
           </h1>
 
-          <p className="mt-4 text-sm md:text-base text-gray-800 leading-relaxed">
+          <p className="mt-4 text-sm md:text-base text-primary-foreground leading-relaxed">
             I will ensure your wedding day unfolds seamlessly, creating a stress-free
             atmosphere that allows you to be fully present and enjoy your day. I take
             great care in understanding your vision and capturing every beautiful
@@ -151,7 +151,7 @@ export function Services() {
             />
 
             {/* Optional dark overlay for better text contrast */}
-            <div className="absolute inset-0 bg-radial from-transparent to-black"></div>
+            <div className="absolute inset-0 bg-radial from-transparent  via-background to-background"></div>
           </div>
         </div>
       </motion.div>

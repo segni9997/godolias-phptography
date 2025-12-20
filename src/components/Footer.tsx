@@ -19,12 +19,12 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-black/90 ">
+    <footer className="bg-background/90 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="text-2xl font-serif italic text-orange-800 mb-2">Godolias</div>
-          <div className="text-xs tracking-widest text-orange-500 uppercase">photo video & Bridal</div>
+          <div className="text-2xl font-serif italic text-primary mb-2">Godolias</div>
+          <div className="text-xs tracking-widest text-secondary uppercase">photo video & Bridal</div>
         </div>
 
         {/* Description */}
@@ -40,7 +40,7 @@ export function Footer() {
             <Link
               key={item.name}
               to={item.to}
-              className="text-xs tracking-wider text-orange-600 hover:text-orange-900 transition-colors"
+              className="text-xs tracking-wider text-secondary hover:text-primary transition-colors"
             >
               {item.name}
             </Link>
@@ -53,15 +53,15 @@ export function Footer() {
             <Link
               key={index}
               to={social.to}
-              className="w-10 h-10 flex items-center justify-center bg-orange-200 hover:bg-orange-300 transition-colors"
+              className="w-10 h-10 flex items-center justify-center bg-secondary hover:bg-secondary/80 transition-colors"
             >
-              <social.icon className="w-4 h-4 text-orange-600" />
+              <social.icon className="w-4 h-4 text-primary" />
             </Link>
           ))}
         </div>
 
         {/* Copyright */}
-        <div className="text-center text-xs text-orange-500">© {new Date().getFullYear()} Godolias photo video & Bridal</div>
+        <div className="text-center text-xs text-secondary">© {new Date().getFullYear()} Godolias photo video & Bridal</div>
       </div>
     </footer>
   )

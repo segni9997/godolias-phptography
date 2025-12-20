@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { Button } from "./ui/button"
+import { ThemeToggle } from "./ThemeToggle"
 
 
 export function Navbar() {
@@ -21,7 +22,7 @@ export function Navbar() {
   ]
 
   return (
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/60 backdrop-blur-sm">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Desktop Navigation - Left Links */}
@@ -30,7 +31,7 @@ export function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-xs tracking-wider text-orange-400 hover:text-orange-900 transition-colors uppercase"
+                className="text-xs tracking-wider text-primary hover:text-primary/80 transition-colors uppercase"
               >
                 {link.label}
               </Link>
@@ -39,8 +40,8 @@ export function Navbar() {
 
           {/* Center Logo */}
           <Link to="/" className="flex flex-col items-center">
-            <div className="font-['Playfair_Display'] italic text-2xl text-orange-400 hover:text-orange-900">Godolias</div>
-            <div className="text-[10px] tracking-[0.2em] text-orange-400 hover:text-orange-900 uppercase"> photo video & Bridal</div>
+            <div className="font-['Playfair_Display'] italic text-2xl text-primary hover:text-primary/80">Godolias</div>
+            <div className="text-[10px] tracking-[0.2em] text-primary hover:text-primary/80 uppercase"> photo video & Bridal</div>
           </Link>
 
           {/* Desktop Navigation - Right Links */}
@@ -49,17 +50,21 @@ export function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-xs tracking-wider text-orange-400 hover:text-orange-900 transition-colors uppercase"
+                className="text-xs tracking-wider text-primary hover:text-primary/80 transition-colors uppercase"
               >
                 {link.label}
               </Link>
             ))}
+            {/* <ThemeToggle /> */}
           </div>
 
           {/* Mobile menu button */}
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X className="h-6  text-orange-400 w-6" /> : <Menu className="h-6 w-6 text-orange-400 " />}
-          </Button>
+          <div className="flex items-center space-x-4">
+            <ThemeToggle />
+            <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? <X className="h-6  text-primary w-6" /> : <Menu className="h-6 w-6 text-primary " />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -69,7 +74,7 @@ export function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
-                className="block text-sm tracking-wider text-orange-300 hover:text-orange-500 transition-colors uppercase"
+                className="block text-sm tracking-wider text-primary hover:text-primary/80 transition-colors uppercase"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}

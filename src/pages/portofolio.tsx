@@ -16,7 +16,7 @@ const portfolioCategories = [
     names: "Stacy",
     category: "Portrait",
     date: "Mar 22 2024",
-    image: "/professional-woman-portrait-white-blazer.jpg",
+    image: "/professional-woman-portrait-background-blazer.jpg",
   },
   {
     id: "john-miranda",
@@ -78,7 +78,7 @@ export default function PortfolioPage() {
   const categories = ["All", ...Array.from(new Set(portfolioCategories.map((item) => item.category)))]
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       {/* <Navigation /> */}
 
       {/* Hero Section */}
@@ -88,15 +88,15 @@ export default function PortfolioPage() {
           alt="Portfolio hero"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-white via-white/70  to-transparent " />
+        <div className="absolute inset-0 bg-linear-to-t from-background via-background/70  to-transparent " />
       </section>
 
       {/* Portfolio Content */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="text-xs tracking-[0.3em] uppercase text-stone-400 mb-4">PORTFOLIO</div>
-            <h1 className="text-4xl md:text-5xl font-serif text-stone-800">Highlighted Works</h1>
+            <div className="text-xs tracking-[0.3em] uppercase text-primary mb-4">PORTFOLIO</div>
+            <h1 className="text-4xl md:text-5xl font-serif text-secondary ">Highlighted Works</h1>
           </div>
 
           {/* Filter Buttons */}
@@ -107,8 +107,8 @@ export default function PortfolioPage() {
                 onClick={() => setActiveFilter(category)}
                 className={`px-6 py-2 text-sm tracking-wider uppercase transition-all duration-300 ${
                   activeFilter === category
-                    ? "bg-stone-700 text-white"
-                    : "bg-stone-100 text-stone-600 border border-stone-300 hover:border-stone-700 hover:text-stone-900"
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-primary/50 text-primary-foreground border  hover:border-primary hover:text-stone-900"
                 }`}
               >
                 {category}
@@ -120,7 +120,7 @@ export default function PortfolioPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPortfolio.map((item) => (
               <Link key={item.id} to={`/portfolio/${item.id}`} className="group">
-                <div className="bg-stone-200 border-8 border-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div className="bg-muted border-8 border-background overflow-hidden hover:shadow-lg transition-shadow duration-300">
                   <div className="relative h-96 overflow-hidden">
                     <img
                       src={item.image || "/placeholder.svg"}
@@ -129,9 +129,9 @@ export default function PortfolioPage() {
                     />
                   </div>
                   <div className="p-6 text-center">
-                    <div className="text-sm tracking-wider uppercase text-stone-400 mb-2">{item.category}</div>
-                    <h3 className="text-2xl font-serif text-stone-800 mb-2">{item.names}</h3>
-                    <div className="text-sm text-stone-500">{item.date}</div>
+                    <div className="text-sm tracking-wider uppercase text-primary/80 mb-2">{item.category}</div>
+                    <h3 className="text-2xl font-serif text-secondary mb-2">{item.names}</h3>
+                    <div className="text-sm text-muted-foreground">{item.date}</div>
                   </div>
                 </div>
               </Link>
@@ -141,7 +141,7 @@ export default function PortfolioPage() {
           {/* Empty State */}
           {filteredPortfolio.length === 0 && (
             <div className="text-center py-16">
-              <p className="text-stone-500 text-lg">No portfolio items found in this category.</p>
+              <p className="text-primary text-lg">No portfolio items found in this category.</p>
             </div>
           )}
         </div>

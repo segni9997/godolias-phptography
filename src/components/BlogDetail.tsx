@@ -98,8 +98,8 @@ const blogPosts: Record<
     title: "Top 10 Engagement Photo Tips",
     category: "Engagement",
     date: "April 22, 2023",
-    heroImage: "/romantic-engagement-photo-couple-sunset.jpg",
-    featuredImage: "/couple-engagement-photo-natural-pose.jpg",
+    heroImage: "/romantic-engagement-couple-sunset-portrait.jpg",
+    featuredImage: "/couple-engagement-photo-intimate-moment.jpg",
     content: [
       {
         type: "paragraph",
@@ -174,7 +174,7 @@ export default function BlogPostPage() {
 
   return (
     <motion.div
-      className="min-h-screen bg-white"
+      className="min-h-screen bg-background"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -182,16 +182,16 @@ export default function BlogPostPage() {
 
       {/* Hero Section */}
       <motion.div
-        className="relative h-64 bg-stone-100"
+        className="relative h-64 bg-background"
         variants={itemVariants}
       >
         <img
           src={post.heroImage || "/placeholder.svg"}
           alt="Blog post header"
 
-          className="object-cover object-center"
+          className="object-cover object-center h-full w-full"
         />
-        <div className="absolute inset-0 bg-white/40" />
+        <div className="absolute inset-0 bg-linear-to-t from-background to-transparent" />
       </motion.div>
 
       {/* Article Header */}
@@ -200,15 +200,15 @@ export default function BlogPostPage() {
           className="text-center mb-8"
           variants={itemVariants}
         >
-          <div className="text-xs tracking-[0.3em] text-stone-400 uppercase mb-4">Blog</div>
-          <h1 className="font-['Playfair_Display'] text-3xl md:text-5xl text-stone-800 mb-6 leading-tight">
+          <div className="text-xs tracking-[0.3em] text-secondary uppercase mb-4">Blog</div>
+          <h1 className="font-['Playfair_Display'] text-3xl md:text-5xl text-primary mb-6 leading-tight">
             {post.title}
           </h1>
           <div className="flex items-center justify-center space-x-8 text-sm">
             <span className="text-stone-500">Date: {post.date}</span>
-            <span className="text-stone-400">
+            <span className="text-foreground">
               Category:
-              <span className="font-['Playfair_Display'] italic text-stone-600 ml-2">{post.category}</span>
+              <span className="font-['Playfair_Display'] italic text-muted-foreground ml-2">{post.category}</span>
             </span>
           </div>
         </motion.div>
@@ -218,7 +218,7 @@ export default function BlogPostPage() {
           className="relative h-[500px] mb-12"
           variants={itemVariants}
         >
-          <img src={post.featuredImage || "/placeholder.svg"} alt={post.title}  className="object-cover" />
+          <img src={post.featuredImage || "/placeholder.svg"} alt={post.title}  className="object-cover w-full h-full" />
         </motion.div>
 
         {/* Article Content */}
@@ -231,7 +231,7 @@ export default function BlogPostPage() {
               return (
                 <motion.p
                   key={index}
-                  className="text-stone-700 leading-relaxed mb-6"
+                  className="text-muted-foreground leading-relaxed mb-6"
                   variants={itemVariants}
                 >
                   {block.text}
@@ -242,7 +242,7 @@ export default function BlogPostPage() {
               return (
                 <motion.h2
                   key={index}
-                  className="font-['Playfair_Display'] text-2xl text-stone-800 mt-10 mb-4"
+                  className="font-['Playfair_Display'] text-2xl text-primary mt-10 mb-4"
                   variants={itemVariants}
                 >
                   {block.text}
@@ -255,12 +255,12 @@ export default function BlogPostPage() {
 
         {/* Navigation */}
         <motion.div
-          className="flex items-center justify-between mt-16 pt-8 border-t border-stone-200"
+          className="flex items-center justify-between mt-16 pt-8 border-t border-primary"
           variants={itemVariants}
         >
           <motion.div whileHover={{ x: -5 }} transition={{ duration: 0.2 }}>
             <Link
-              to="/blog"
+              to="/blogs"
               className="flex items-center space-x-2 text-stone-600 hover:text-stone-900 transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
@@ -270,7 +270,7 @@ export default function BlogPostPage() {
           <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
             <Link
               to="/portfolio"
-              className="flex items-center space-x-2 text-stone-600 hover:text-stone-900 transition-colors"
+              className="flex items-center space-x-2 text-primary hover:text-secondary transition-colors"
             >
               <span className="text-xs tracking-wider uppercase">Gallery</span>
               <ArrowRight className="w-4 h-4" />

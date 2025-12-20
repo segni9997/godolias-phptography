@@ -26,16 +26,16 @@ export function About() {
   return (
     <motion.section
       id="about"
-      className="py-24 bg-black"
+      className="py-24 bg-background"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariants}
     >
       <motion.div className="mb-5" variants={itemVariants}>
-        <div className="text-xs tracking-[0.3em] uppercase text-orange-400 text-center">Award Winning</div>
+        <div className="text-xs tracking-[0.3em] uppercase text-primary text-center">Award Winning</div>
 
-        <h2 className="text-4xl md:text-5xl font-serif text-center text-orange-200 leading-tight text-balance">
+        <h2 className="text-4xl md:text-5xl font-serif text-center text-primary/70 leading-tight text-balance">
           Experience The Perfect Blend
           <br />
           Of Creativity And Elegance In
@@ -62,18 +62,18 @@ export function About() {
             variants={containerVariants}
           >
             <motion.div className="flex justify-center" variants={itemVariants}>
-              <Quote className="w-24 h-24 text-white/50 rotate-180" />
+              <Quote className="w-24 h-24 text-muted-foreground/50 rotate-180" />
             </motion.div>
 
             <motion.div className="pt-2" variants={itemVariants}>
-              <h3 className="text-4xl font-serif text-white/80 mb-4">Hello, We are Godolias</h3>
-              <p className="text-white leading-relaxed mb-6 mx-auto  text-lg">
+              <h3 className="text-4xl font-serif text-muted-foreground/80 mb-4">Hello, We are Godolias</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6 mx-auto  text-lg">
                 I am a professional photographer based in beautiful Ethiopia. With over a decade of
                 experience, I've had the privilege of capturing love stories through my lens. I believe in creating
                 timeless images that speak volumes about the joy, passion, and romance of your special day. I strive to
                 capture each couple's unique journey, transforming each moment into everlasting memories for you.
               </p>
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8">LEARN MORE</Button>
+              <Button className="bg-primary hover:bg-primary/80 text-white px-8">LEARN MORE</Button>
             </motion.div>
           </motion.div>
         </motion.div>

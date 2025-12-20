@@ -3,12 +3,12 @@ import { AnimatePresence, motion } from "framer-motion"
 import Home from "./pages/Home"
 import { Navbar } from "./components/NavBar"
 import Blog from "./pages/Blog"
-import { Contact } from "./components/contact"
 import PortfolioPage from "./pages/portofolio"
 import AboutPage from "./pages/Aboutus"
 import ServicesPage from "./pages/services"
 import PortfolioItemPage from "./components/portofolioDetail"
 import BlogPostPage from "./components/BlogDetail"
+import { ContactPage } from "./pages/Contactus"
 
 
 
@@ -56,7 +56,7 @@ function AnimatedRoutes() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Contact/>
+            <ContactPage/>
           </motion.div>
         }/>
         <Route path="/services" element={
