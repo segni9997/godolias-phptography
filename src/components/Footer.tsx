@@ -19,7 +19,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-background/90 ">
+    <footer className="bg-background ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Logo */}
         <div className="text-center mb-8">
@@ -28,7 +28,7 @@ export function Footer() {
         </div>
 
         {/* Description */}
-        <p className="text-center text-orange-600 text-sm max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-center text-primary text-sm max-w-2xl mx-auto mb-8 leading-relaxed">
           Godolias is a freelance wedding photographer who specializes in creating art through beautiful, authentic
           images. She listens carefully to your story, capturing every moment, big or small. Her passion for life and
           capturing authentic moments creates art that tells a powerful story.
@@ -40,7 +40,7 @@ export function Footer() {
             <Link
               key={item.name}
               to={item.to}
-              className="text-xs tracking-wider text-secondary hover:text-primary transition-colors"
+              className="text-xs tracking-wider text-foreground hover:text-foreground/80 transition-colors"
             >
               {item.name}
             </Link>
@@ -53,9 +53,9 @@ export function Footer() {
             <Link
               key={index}
               to={social.to}
-              className="w-10 h-10 flex items-center justify-center bg-secondary hover:bg-secondary/80 transition-colors"
+              className="w-10 h-10 flex items-center justify-center bg-secondary  text-foreground hover:bg-secondary/80 transition-colors"
             >
-              <social.icon className="w-4 h-4 text-primary" />
+              <social.icon className="w-4 h-4 text-primary-foreground" />
             </Link>
           ))}
         </div>
