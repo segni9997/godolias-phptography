@@ -4,46 +4,64 @@ import { motion } from "framer-motion"
 
 const slides = [
   {
-    image: "/images/image.png",
-    title: "Timeless Moments",
-    subtitle: "Captured Through Artistic",
+    image: "/wedding4.jpg",
+    title: "Forever Begins Here",
+    subtitle: "Elegant & Emotional",
     subtitleLine2: "Wedding Photography",
   },
   {
-    image: "/romantic-couple-at-sunset-beach-wedding-photograph.jpg",
-    title: "Love Stories Unfold",
-    subtitle: "Preserving Your Most",
-    subtitleLine2: "Precious Memories",
+    image: "/babyshower16.jpg",
+    title: "A New Chapter Begins",
+    subtitle: "Celebrating Love, Joy",
+    subtitleLine2: "And New Life",
   },
   {
-    image: "/elegant-wedding-ceremony-outdoor-natural-light-pho.jpg",
-    title: "Every Detail Matters",
-    subtitle: "Creating Timeless Images",
-    subtitleLine2: "Of Your Special Day",
+    image: "/congA6.jpg",
+    title: "Moments of Achievement",
+    subtitle: "Honoring Success And",
+    subtitleLine2: "Life’s Milestones",
+  }, {
+    image: "/shemglinna2.jpg",
+    title: "Honoring Tradition",
+    subtitle: "Capturing the Beauty of",
+    subtitleLine2: "Shimglina Ceremonies",
   },
   {
-    image: "/intimate-wedding-portrait-couple-embrace-golden-ho.jpg",
-    title: "Authentic Emotions",
-    subtitle: "Capturing The Beauty",
-    subtitleLine2: "Of Your Connection",
+    image: "/hbd6.jpg",
+    title: "Celebrate Every Year",
+    subtitle: "Capturing Laughter, Joy",
+    subtitleLine2: "And Birthday Memories",
   },
-]
+  {
+    image: "/kid7.jpg",
+  title: "Where Moments Unite",
+subtitle: "Beautifully Documenting",
+subtitleLine2: "Every Special Event",
+  },
+];
+
 
 export function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(false)
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length)
+  }, 5000)
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsTransitioning(true)
-      setTimeout(() => {
-        setCurrentSlide((prev) => (prev + 1) % slides.length)
-        setIsTransitioning(false)
-      }, 500)
-    }, 5000)
+  return () => clearInterval(interval)
+}, [])
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setIsTransitioning(true)
+  //     setTimeout(() => {
+  //       setCurrentSlide((prev) => (prev + 1) % slides.length)
+  //       setIsTransitioning(false)
+  //     }, 500)
+  //   }, 5000)
 
-    return () => clearInterval(interval)
-  }, [])
+  //   return () => clearInterval(interval)
+  // }, [])
 
   return (
     <motion.section id="home" className="relative h-[90vh] pt-20 overflow-hidden  ">

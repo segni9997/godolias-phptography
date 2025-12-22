@@ -1,19 +1,27 @@
 import { useEffect, useState } from "react";
-
 const slides = [
   {
-    src: "/woman-in-hat-outdoor-field-portrait.jpg",
-    caption: "Elegant Outdoor Celebration",
+    src: "/wedding1.jpg",
+    caption: "“Absolutely amazing! They captured every moment of our wedding perfectly. The photos are timeless and full of emotion.” – Selam & Dawit",
   },
   {
-    src: "/elegant-birthday-party-celebration-balloons.jpg",
-    caption: "Luxury Birthday Moments",
+    src: "/hbd7.jpg",
+    caption: "“Our family birthday celebration was captured beautifully. Every smile and laugh was perfectly documented.” – Yonas’ Family",
   },
   {
-    src: "/professional-woman-portrait-white-blazer.jpg",
-    caption: "Sophisticated Event Styling",
+    src: "/other12.jpg",
+    caption: "“A truly professional portrait session. Rahel felt confident and natural, and the final images exceeded our expectations.” – Rahel",
+  },
+  {
+    src: "/babyshower16.jpg",
+    caption: "“The maternity session was heartwarming. The photographer made us feel at ease, and the photos are simply stunning.” – Mekdes & Baby",
+  },
+  {
+    src: "/fam3.jpg",
+    caption: "“Our family gathering was captured with so much care and creativity. Every candid moment shines through the photos!” – Addis Family",
   },
 ];
+
 
 export default function FeedBack() {
   const [current, setCurrent] = useState(0);
@@ -33,21 +41,21 @@ export default function FeedBack() {
       <div className="hidden md:block relative h-[500px]">
         <div className="absolute bottom-44 -left-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
           <img
-            src="/elegant-birthday-party-celebration-balloons.jpg"
+            src="/hbd6.jpg"
             alt="Client photo 1"
             className="h-full w-full object-cover"
           />
         </div>  
          <div className="absolute bottom-1 h-64 border-8 border-muted-foreground/80 w-full">
           <img
-            src="/elegant-birthday-party-celebration-balloons.jpg"
+            src="/hbd6.jpg"
             alt="Client photo 1"
             className="h-full w-full object-cover"
           />
         </div>
         <div className="absolute -bottom-12 -right-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
           <img
-            src="/elegant-birthday-party-celebration-balloons.jpg"
+            src="/hbd6.jpg"
             alt="Client photo 1"
             className="h-full w-full object-cover"
           />
@@ -100,21 +108,21 @@ export default function FeedBack() {
   <div className="hidden md:block relative h-[500px]">
         <div className="absolute bottom-44 -right-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
           <img
-             src="/professional-woman-portrait-white-blazer.jpg"
+             src="/babyshower17.jpg"
             alt="Client photo 1"
             className="h-full w-full object-cover"
           />
         </div>  
          <div className="absolute bottom-1 h-64 border-8 border-muted-foreground/80 w-full">
           <img
-             src="/professional-woman-portrait-white-blazer.jpg"
+             src="/babyshower17.jpg"
             alt="Client photo 1"
             className="h-full w-full object-cover"
           />
         </div>
         <div className="absolute -bottom-12 -left-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
           <img
-             src="/professional-woman-portrait-white-blazer.jpg"
+             src="/babyshower17.jpg"
             alt="Client photo 1"
             className="h-full w-full object-cover"
           />

@@ -7,72 +7,73 @@ import FeedBack from "./FedBacks"
 
 const portfolioItems = [
   {
-    id: "fiona-mikael",
+    id: "abeti-kalkidan",
     number: "01",
-    names: "Fiona & Mikael",
+    names: "Abeti & Kalkidan",
     category: "Wedding",
     date: "Jan 11 2025",
     description:
-      "For Stacey's wedding, we collaborated with over and elegance, we captured picturesque between the for her incredible day. It was an absolute pleasure capturing every passionate moment of her wedding day—from preparation to celebration.",
-    image: "/romantic-couple-wedding-portrait-by-lake.jpg",
-    thumbnail: "/romantic-couple-wedding-portrait-by-lake.jpg",
+      "Abeti and Kalkidan’s wedding was a heartfelt celebration of love and unity. From the quiet preparation moments to the joyful ceremony and reception, every detail reflected elegance, tradition, and deep connection.",
+    image: "/wedding1.jpg",
+    thumbnail: "/wedding3.jpg",
   },
   {
-    id: "john-miranda",
+    id: "Mediation-Ruth",
     number: "02",
-    names: "John & Miranda",
-    category: "Wedding",
+    names: "Tesfaye & Ruth",
+    category: "Mediation",
     date: "Aug 15 2024",
     description:
-      "An enchanting garden wedding celebration filled with joy, laughter, and confetti showers. John and Miranda's special day was a beautiful blend of traditional elegance and modern romance, set against a backdrop of lush greenery.",
-    image: "/wedding-couple-with-confetti-outdoor-celebration.jpg",
-    thumbnail: "/wedding-couple-with-confetti-outdoor-celebration.jpg",
+      "A traditional Shimglina mediation ceremony capturing the respect, wisdom, and cultural beauty of Ethiopian pre-wedding customs. The gathering symbolized unity between families and the beginning of a shared journey.",
+    image: "/shemglinna3.jpg",
+    thumbnail: "/shemglinna.jpg",
   },
   {
-    id: "stacy-portrait",
+    id: "rahel-portrait",
     number: "03",
-    names: "Stacy",
+    names: "Rahel",
     category: "Portrait",
     date: "Mar 22 2024",
     description:
-      "A sophisticated portrait session capturing Stacy's confident and professional persona. The clean, minimalist approach highlights her natural beauty and charismatic personality through timeless background and white photography.",
-    image: "/professional-woman-portrait-white-blazer.jpg",
-    thumbnail: "/professional-woman-portrait-white-blazer.jpg",
+      "A clean and expressive portrait session highlighting Rahel’s confidence and natural beauty. Soft lighting and minimal composition were used to create timeless and elegant portraits.",
+    image: "/other11.jpg",
+    thumbnail: "/other14.jpg",
   },
   {
-    id: "emma-birthday",
+    id: "yonas-birthday",
     number: "04",
-    names: "Emma's 30th",
-    category: "Birthday",
+    names: "Yonas’ Birthday",
+    category: "HBD",
     date: "Sep 10 2024",
     description:
-      "A vibrant birthday celebration capturing precious moments of joy and laughter. Emma's mileorange birthday was filled with loved ones, beautiful decor, and unforgettable memories that will be cherished for years to come.",
-    image: "/elegant-birthday-party-celebration-balloons.jpg",
-    thumbnail: "/elegant-birthday-party-celebration-balloons.jpg",
+      "A joyful birthday celebration filled with laughter, music, and unforgettable moments. Yonas’ special day brought friends and family together to celebrate life and happiness.",
+    image: "/hbd6.jpg",
+    thumbnail: "/hbd6.jpg",
   },
   {
-    id: "tech-conference",
+    id: "babyshower-mekdes",
     number: "05",
-    names: "Tech Summit 2024",
-    category: "Events",
+    names: "Mekdes & Baby",
+    category: "Baby Shower",
     date: "Nov 05 2024",
     description:
-      "Corporate event coverage capturing keynote speakers, networking moments, and the energy of innovation. This tech conference brought together industry leaders and captured the essence of collaboration and forward thinking.",
-    image: "/corporate-event-conference-speakers-networking.jpg",
-    thumbnail: "/corporate-event-conference-speakers-networking.jpg",
+      "A warm and loving baby shower celebrating new life and motherhood. Every moment reflected joy, anticipation, and the support of family and close friends.",
+    image: "/babyshower17.jpg",
+    thumbnail: "/babyshower17.jpg",
   },
   {
-    id: "maternity-sarah",
+    id: "family-event-addis",
     number: "06",
-    names: "Sarah & Baby",
-    category: "Others",
+    names: "Addis Family Gathering",
+    category: "Family Events",
     date: "Dec 18 2024",
     description:
-      "A tender maternity session celebrating the anticipation and love of expecting parents. Soft natural light and intimate poses capture this precious time of growth and the beautiful journey into parenthood.",
-    image: "/maternity-pregnancy-portrait-sunset-outdoors.jpg",
-    thumbnail: "/maternity-pregnancy-portrait-sunset-outdoors.jpg",
+      "A heartfelt family gathering captured with care and authenticity. Genuine connections, shared laughter, and meaningful moments reflected the beauty of togetherness.",
+    image: "/fam3.jpg",
+    thumbnail: "/fam3.jpg",
   },
-]
+];
+
 
 export function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0)

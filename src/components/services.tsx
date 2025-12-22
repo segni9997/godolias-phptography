@@ -1,34 +1,78 @@
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
+// const packages = [
+//   {
+//     title: "Wedding",
+//     image: "/wedding4.jpg",
+//   },
+//   {
+//     title: "Portrait",
+//     image: "/other15.jpg",
+//   },
+//   {
+//     title: "Engagement",
+//     image: "/shemglinna1.jpg",
+//   },
+// ];
 const packages = [
   {
     title: "Wedding",
-    image: "/outdoor-wedding-ceremony-with-guests.jpg",
+    image: "/wedding4.jpg",
   },
   {
     title: "Portrait",
-    image: "/woman-in-hat-outdoor-portrait-photography.jpg",
+    image: "/kid3.jpg",
   },
   {
-    title: "Engagement",
-    image: "/couple-engagement-photo-intimate-moment.jpg",
+    title: "Mediation",
+    image: "/shemglinna2.jpg",
+  },
+
+
+  {
+    title: "Birthday",
+    image: "/hbd14.jpg",
+  },
+  {
+    title: "Baby Shower",
+    image: "/babyshower3.jpg",
+  },
+  {
+    title: "Graduation",
+    image: "/congA6.jpg",
+  },
+  {
+    title: "Family Session",
+    image: "/fam1.jpg",
+  },
+  {
+    title: "Event Coverage",
+    image: "/fam3.jpg",
   },
 ];
 
 export function Services() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.1,
-      },
+  // const containerVariants = {
+  //   hidden: { opacity: 0 },
+  //   visible: {
+  //     opacity: 1,
+  //     transition: {
+  //       staggerChildren: 0.2,
+  //       delayChildren: 0.1,
+  //     },
+  //   },
+  // }
+const gridVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
     },
-  }
-
+  },
+}
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
@@ -44,8 +88,8 @@ export function Services() {
       className="py-24 bg-background"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
-      variants={containerVariants}
+      // viewport={{ once: true, amount: 0.3 }}
+      // variants={containerVariants}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div className="text-center mb-16" variants={itemVariants}>
@@ -57,10 +101,13 @@ export function Services() {
           </h2>
         </motion.div>
 
-        <motion.div
-          className="grid md:grid-cols-3 gap-8 mb-12"
-          variants={containerVariants}
-        >
+<motion.div
+  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12"
+  variants={gridVariants}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+>
           {packages.map((pkg, index) => (
             <motion.div
               key={index}
@@ -95,14 +142,14 @@ export function Services() {
           ))}
         </motion.div>
 
-        <motion.div className="text-center" variants={itemVariants}>
+        {/* <motion.div className="text-center" variants={itemVariants}>
           <Button
             size="lg"
-            className="bg-primary hover:bg-primary-foreground px-8"
+            className="bg-primary hover:bg-secondary px-8"
           >
             VIEW DETAILS
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
       <motion.div
         className="relative mt-4 bg-background overflow-hidden"
@@ -151,7 +198,7 @@ export function Services() {
             />
 
             {/* Optional dark overlay for better text contrast */}
-            <div className="absolute inset-0 bg-radial from-transparent  via-background to-background"></div>
+            <div className="absolute inset-0 bg-radial from-transparent via-background to-background"></div>
           </div>
         </div>
       </motion.div>

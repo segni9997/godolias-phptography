@@ -35,7 +35,7 @@ export function Contact() {
 
           {/* Image */}
           <div className="relative h-[500px]">
-            <img src="/wedding-ceremony-outdoor-nature-path.jpg" alt="Wedding ceremony" className="w-full h-full object-cover" />
+            <img src="/shemglinna5.jpg" alt="Wedding ceremony" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
