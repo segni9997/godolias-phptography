@@ -20,119 +20,42 @@ const blogPosts: Record<
   }[]
 }
 >  = {
-  "accessorizing-your-wedding-look": {
-    title: "Accessorizing Your Wedding Look: From Veils To Shoes",
+  "abebe-mekdes-wedding": {
+    title: "Abebe & Mekdes Wedding",
     category: "Wedding",
-    date: "June 3, 2023",
-    heroImage: "/images/image.png",
-    featuredImage: "/bride-in-elegant-lace-back-dress-outdoor.jpg",
+    date: "2025-03-12",
+    heroImage: "/wedding4.jpg",
+    featuredImage: "/wedding1.jpg",
     content: [
       {
         type: "paragraph",
-        text: "Choosing the perfect accessories can make or break your wedding day look. From delicate veils to stunning shoes, each element contributes to creating your dream bridal ensemble. Let me guide you through the essential accessories that will complete your wedding day style.",
-      },
-      {
-        type: "heading",
-        text: "Veils",
-      },
-      {
-        type: "paragraph",
-        text: "Veils add an air of romance and tradition. Opt for a longer, floor-length veil if you have a simpler or minimalistic wedding dress. If your dress is elaborate with lace and embellishments, a fingertip-length or shoulder-length veil will complement without overwhelming. Consider the veil's edging - raw edge for modern looks, lace edge for romantic vibes, or ribbon trim for classic elegance.",
-      },
-      {
-        type: "heading",
-        text: "Jewelry",
-      },
-      {
-        type: "paragraph",
-        text: "Less is often better when it comes to bridal jewelry. If you're wearing a dress with an elaborate neckline or back detail, skip the necklace and focus on beautiful earrings. For strapless or simpler necklines, a delicate pendant or statement necklace can add the perfect finishing touch. Remember to consider your hairstyle when choosing earrings - updos showcase chandelier earrings beautifully, while loose waves pair well with studs or small drops.",
-      },
-      {
-        type: "heading",
-        text: "Hair Accessories",
-      },
-      {
-        type: "paragraph",
-        text: "From flower crowns to jeweled combs, hair accessories add personality to your bridal look. Fresh flowers bring an organic, romantic feel perfect for outdoor or boho weddings. Vintage-inspired combs and pins add timeless elegance, while modern geometric pieces create a contemporary edge. Choose accessories that complement both your dress and your personal style.",
-      },
-      {
-        type: "heading",
-        text: "Belts and Sashes",
-      },
-      {
-        type: "paragraph",
-        text: "A belt or sash can completely transform a wedding dress silhouette. Thin, delicate belts with sparkle define the waist subtly, while wider sashes make a statement and can add a pop of color. Consider the proportion of your dress - a ball gown can handle a wider sash, while a sheath dress looks best with a narrow belt.",
-      },
-      {
-        type: "heading",
-        text: "Shoes",
-      },
-      {
-        type: "paragraph",
-        text: "Your wedding shoes need to look beautiful and feel comfortable for hours of standing, walking, and dancing. Consider the venue - stilettos sink into grass, while block heels or wedges provide stability for outdoor weddings. Think about your dress length too; if it's floor-length, you can prioritize comfort since the shoes won't be very visible. For shorter dresses or photo moments, choose shoes that reflect your personality and complement your overall aesthetic.",
+        text: "How we craft unforgettable wedding experiences.How we craft unforgettable wedding experiences.",
       },
     ],
   },
-  "choosing-perfect-venue": {
-    title: "Choosing The Perfect Wedding Venue",
+  "selam-portrait-session": {
+    title: "Selam Portrait Session",
+    category: "Portrait",
+    date: "2025-02-28",
+    heroImage: "/other15.jpg",
+    featuredImage: "/kid1.jpg",
+    content: [
+      {
+        type: "paragraph",
+        text: "Modern styling ideas that elevate any event.",
+      },
+    ],
+  },
+  "kebede-tsegaye-wedding": {
+    title: "Kebede & Tsegaye Wedding",
     category: "Wedding",
-    date: "May 15, 2023",
-    heroImage: "/beautiful-outdoor-wedding-venue.jpg",
-    featuredImage: "/elegant-outdoor-wedding-venue-ceremony-setup.jpg",
+    date: "2025-02-10",
+    heroImage: "/wedding2.jpg",
+    featuredImage: "/wedding3.jpg",
     content: [
       {
         type: "paragraph",
-        text: "Your wedding venue sets the tone for your entire celebration. It's one of the most important decisions you'll make in your wedding planning journey. Here's my guide to finding a location that perfectly captures your vision.",
-      },
-      {
-        type: "heading",
-        text: "Consider Your Guest Count",
-      },
-      {
-        type: "paragraph",
-        text: "Before falling in love with a venue, make sure it can comfortably accommodate your guest list. A space that's too large can feel empty, while one that's too small will feel cramped. Most venues have maximum capacities, but also consider the flow of the space for cocktail hours, dinner, and dancing.",
-      },
-    ],
-  },
-  "engagement-photo-tips": {
-    title: "Top 10 Engagement Photo Tips",
-    category: "Engagement",
-    date: "April 22, 2023",
-    heroImage: "/romantic-engagement-couple-sunset-portrait.jpg",
-    featuredImage: "/couple-engagement-photo-intimate-moment.jpg",
-    content: [
-      {
-        type: "paragraph",
-        text: "Engagement photos are a wonderful opportunity to celebrate your love and create beautiful images you'll treasure forever. Here are my top tips for making your engagement session truly memorable.",
-      },
-      {
-        type: "heading",
-        text: "Choose A Meaningful Location",
-      },
-      {
-        type: "paragraph",
-        text: "Select a location that has significance to your relationship - where you first met, had your first date, or got engaged. Personal connection to the setting will help you feel more relaxed and create more authentic, emotional photos.",
-      },
-    ],
-  },
-  "wedding-timeline-guide": {
-    title: "Creating Your Perfect Wedding Day Timeline",
-    category: "Planning",
-    date: "April 8, 2023",
-    heroImage: "/wedding-day-getting-ready-details.jpg",
-    featuredImage: "/wedding-timeline-planning-schedule.jpg",
-    content: [
-      {
-        type: "paragraph",
-        text: "A well-planned timeline is the secret to a stress-free wedding day. It ensures everything flows smoothly and you have time to enjoy every precious moment. Let me help you create the perfect schedule.",
-      },
-      {
-        type: "heading",
-        text: "Start With Your Ceremony Time",
-      },
-      {
-        type: "paragraph",
-        text: "Work backwards from your ceremony time to determine when hair and makeup should start, when to get into your dress, and when photos should begin. Allow buffer time for unexpected delays - things rarely run exactly on schedule on wedding day.",
+        text: "Photography tips for timeless memories.",
       },
     ],
   },

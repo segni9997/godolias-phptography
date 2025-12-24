@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 export interface items {
 heading:string;
-img:string
+img:string;
 description:string;
 date:string;
 category:string;

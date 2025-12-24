@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom"
 import { Footer } from "./Footer"
 import NotFound from "./notfound"
 
-
 const portfolioData: Record<
   string,
   {
@@ -14,29 +13,13 @@ const portfolioData: Record<
     gallery: string[]
   }
 > = {
-  "fiona-mikael": {
-    names: "Fiona & Mikael",
+  "abebe-mekdes": {
+    names: "Abebe & Mekdes Wedding",
     category: "Wedding",
     date: "Jan 11 2025",
     description:
-      "For Stacey's wedding, we collaborated with over and elegance, we captured picturesque between the for her incredible day. It was an absolute pleasure capturing every passionate moment of her wedding day—from preparation to celebration.",
-    mainImage: "/romantic-couple-wedding-portrait-by-lake-golden-ho.jpg",
-    gallery: [
-      "/couple-kissing-golden-field-sunset-wedding.jpg",
-      "/wedding-ceremony-outdoor-nature-path.jpg",
-      "/bride-and-groom-sitting-wooden-bridge-romantic.jpg",
-      "/wedding-reception-outdoor-evening-lights.jpg",
-      "/placeholder.svg?height=600&width=600",
-      "/placeholder.svg?height=600&width=600",
-    ],
-  },
-  "john-miranda": {
-    names: "John & Miranda",
-    category: "Wedding",
-    date: "Aug 15 2024",
-    description:
-      "An enchanting garden wedding celebration filled with joy, laughter, and confetti showers. The beautiful outdoor ceremony was surrounded by lush greenery and the warm embrace of family and friends.",
-    mainImage: "/wedding-couple-with-confetti-outdoor-celebration.jpg",
+      "A beautiful wedding celebration capturing love, joy, and unforgettable moments. Elegant decor and intimate moments were highlighted throughout the day.",
+    mainImage: "/wedding1.jpg",
     gallery: [
       "/placeholder.svg?height=600&width=900",
       "/placeholder.svg?height=600&width=600",
@@ -46,13 +29,13 @@ const portfolioData: Record<
       "/placeholder.svg?height=600&width=900",
     ],
   },
-  "stacy-portrait": {
-    names: "Stacy",
+  "selam-portrait": {
+    names: "Selam Portrait Session",
     category: "Portrait",
     date: "Mar 22 2024",
     description:
-      "A sophisticated portrait session capturing confidence and professional elegance. This minimalist approach focuses on natural beauty and authentic personality through timeless photography.",
-    mainImage: "/placeholder.svg?height=800&width=1200",
+      "A sophisticated portrait session capturing confidence and authentic personality. The minimalist style highlights natural beauty and timeless elegance.",
+    mainImage: "/other1.jpg",
     gallery: [
       "/placeholder.svg?height=600&width=600",
       "/placeholder.svg?height=600&width=900",
@@ -62,13 +45,29 @@ const portfolioData: Record<
       "/placeholder.svg?height=600&width=600",
     ],
   },
-  "emma-birthday": {
-    names: "Emma's 30th",
+  "kebede-tsegaye": {
+    names: "Kebede & Tsegaye Wedding",
+    category: "Wedding",
+    date: "Aug 15 2024",
+    description:
+      "An enchanting outdoor wedding full of joy, laughter, and unforgettable memories. Surrounded by family and friends, every moment was magical.",
+    mainImage: "/wedding2.jpg",
+    gallery: [
+      "/placeholder.svg?height=600&width=900",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=900",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=900",
+    ],
+  },
+  "mekdes-birthday": {
+    names: "Mekdes's 30th Birthday",
     category: "Birthday",
     date: "Sep 10 2024",
     description:
-      "A vibrant milestone celebration filled with loved ones, beautiful decor, and unforgettable moments. Emma's 30th birthday party captured the joy and excitement of this special occasion.",
-    mainImage: "/placeholder.svg?height=800&width=1200",
+      "A vibrant milestone celebration filled with joy, friends, and family. Every detail was captured to remember this special birthday forever.",
+    mainImage: "/hbd1.jpg",
     gallery: [
       "/placeholder.svg?height=600&width=900",
       "/placeholder.svg?height=600&width=600",
@@ -78,13 +77,13 @@ const portfolioData: Record<
       "/placeholder.svg?height=600&width=900",
     ],
   },
-  "tech-conference": {
-    names: "Tech Summit 2024",
-    category: "Events",
+  "Biniam-cermony": {
+    names: "Biniam's KG3 Graduation Ceremony",
+    category: "Graduations",
     date: "Nov 05 2024",
     description:
-      "Professional corporate event coverage capturing keynote presentations, networking moments, and the innovative spirit of the tech industry. This conference brought together leaders and visionaries.",
-    mainImage: "/placeholder.svg?height=800&width=1200",
+      "Celebrating Biniam's milestone in KG3 graduation with proud family and joyful moments captured in a memorable ceremony.",
+    mainImage: "/cong1.jpg",
     gallery: [
       "/placeholder.svg?height=600&width=900",
       "/placeholder.svg?height=600&width=600",
@@ -94,13 +93,13 @@ const portfolioData: Record<
       "/placeholder.svg?height=600&width=900",
     ],
   },
-  "maternity-sarah": {
-    names: "Sarah & Baby",
+  "alem-baby": {
+    names: "Alem Baby Shower",
     category: "Others",
     date: "Dec 18 2024",
     description:
-      "A tender maternity session celebrating the beautiful journey into parenthood. Soft natural light and intimate moments capture the love and anticipation of expecting parents.",
-    mainImage: "/placeholder.svg?height=800&width=1200",
+      "A cozy and joyful baby shower celebration filled with love, laughter, and the anticipation of welcoming a new life into the family.",
+    mainImage: "/babyshower1.jpg",
     gallery: [
       "/placeholder.svg?height=600&width=600",
       "/placeholder.svg?height=600&width=900",
@@ -110,16 +109,66 @@ const portfolioData: Record<
       "/placeholder.svg?height=600&width=600",
     ],
   },
-}
+  "dawit-helen": {
+    names: "Dawit & Helen Wedding",
+    category: "Wedding",
+    date: "Jul 20 2024",
+    description:
+      "Capturing the love and excitement of Dawit & Helen's wedding day with elegance, heartfelt moments, and family celebrations.",
+    mainImage: "/wedding3.jpg",
+    gallery: [
+      "/placeholder.svg?height=600&width=900",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=900",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=900",
+    ],
+  },
+  "Helen-Cermony": {
+    names: "Helen's Graduation Ceremony 2024",
+    category: "Graduations",
+    date: "Oct 12 2024",
+    description:
+      "A proud moment celebrating Helen's graduation, capturing her achievements and the joy shared with family and friends during the ceremony.",
+    mainImage: "/congA4.jpg",
+    gallery: [
+      "/placeholder.svg?height=600&width=900",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=900",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=900",
+    ],
+  },
+  "tesfayes-family": {
+    names: "Tesfayes Family Session",
+    category: "Others",
+    date: "May 08 2024",
+    description:
+      "A warm family session capturing love, connection, and joyful moments shared among the Tesfayes family in a natural and intimate setting.",
+    mainImage: "/fam1.jpg",
+    gallery: [
+      "/placeholder.svg?height=600&width=900",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=900",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=900",
+    ],
+  },
+};
+
 
 export default function PortfolioItemPage() {
 const { id } = useParams<{ id: string }>()
-
+console.log(id)
   if (!id) {
     return <div className="p-10">Invalid portfolio item</div>
   }
 
   const item = portfolioData[id]
+  console.log("item", item)
 
   if (!item) {
     return <NotFound/>

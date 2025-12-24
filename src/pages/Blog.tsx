@@ -3,25 +3,25 @@ import { motion } from "framer-motion"
 
 const blogData: items[] = [
   {
-    heading: "engagement-photo-tips",
-    img: "/elegant-birthday-party-celebration-balloons.jpg",
+    heading: "abebe-mekdes-wedding",
+    img: "/wedding4.jpg",
     description: "How we craft unforgettable wedding experiences.",
     date: "2025-03-12",
-    category: "Weddings",
+    category: "Wedding",
   },
   {
-    heading: "Luxury Event Styling Trends",
-    img: "/professional-woman-portrait-background-blazer.jpg",
+    heading: "selam-portrait-session",
+    img: "/other15.jpg",
     description: "Modern styling ideas that elevate any event.",
     date: "2025-02-28",
-    category: "Styling",
+    category: "Portrait",
   },
   {
-    heading: "Capturing Golden Moments",
-    img: "/woman-in-hat-outdoor-field-portrait.jpg",
+    heading: "kebede-tsegaye-wedding",
+    img: "/wedding2.jpg",
     description: "Photography tips for timeless memories.",
     date: "2025-02-10",
-    category: "Photography",
+    category: "Wedding",
   },
 ];
 export default function Blog() {
@@ -54,7 +54,7 @@ export default function Blog() {
         transition={{ duration: 0.8 }}
       >
         <img
-          src="/bride-with-flower-crown-close-up-portrait.jpg"
+          src="/babyshower11.jpg"
           alt="Portfolio hero"
           className="w-full h-full object-cover"
         />
