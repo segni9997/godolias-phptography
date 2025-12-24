@@ -5,67 +5,67 @@ import { Link } from "react-router-dom"
 
 const portfolioCategories = [
   {
-    id: "fiona-mikael",
-    names: "Fiona & Mikael",
+    id: "abebe-mekdes",
+    names: "Abebe & Mekdes Wedding",
     category: "Wedding",
     date: "Jan 11 2025",
-    image: "/romantic-couple-wedding-portrait-by-lake.jpg",
+    image: "/wedding1.jpg",
   },
   {
-    id: "stacy-portrait",
-    names: "Stacy",
+    id: "selam-portrait",
+    names: "Selam Portrait Session",
     category: "Portrait",
     date: "Mar 22 2024",
-    image: "/professional-woman-portrait-background-blazer.jpg",
+    image: "/other1.jpg",
   },
   {
-    id: "john-miranda",
-    names: "John & Miranda",
+    id: "kebede-tsegaye",
+    names: "Kebede & Tsegaye Wedding",
     category: "Wedding",
     date: "Aug 15 2024",
-    image: "/wedding-couple-with-confetti-outdoor-celebration.jpg",
+    image: "/wedding2.jpg",
   },
   {
-    id: "emma-birthday",
-    names: "Emma's 30th",
+    id: "mekdes-birthday",
+    names: "Mekdes's 30th Birthday",
     category: "Birthday",
     date: "Sep 10 2024",
-    image: "/elegant-birthday-party-celebration-balloons.jpg",
+    image: "/hbd1.jpg",
   },
   {
-    id: "tech-conference",
-    names: "Tech Summit 2024",
-    category: "Events",
+    id: "Biniam-cermony",
+    names: "Biniam's  KG3 Graduation cerm.",
+   category: "Graduations",
     date: "Nov 05 2024",
-    image: "/corporate-event-conference-speakers-networking.jpg",
+    image: "/cong1.jpg",
   },
   {
-    id: "maternity-sarah",
-    names: "Sarah & Baby",
+    id: "alem-baby",
+    names: "Alem Baby Shower",
     category: "Others",
     date: "Dec 18 2024",
-    image: "/maternity-pregnancy-portrait-sunset-outdoors.jpg",
+    image: "/babyshower1.jpg",
   },
   {
-    id: "robert-lisa",
-    names: "Robert & Lisa",
+    id: "dawit-helen",
+    names: "Dawit & Helen Wedding",
     category: "Wedding",
     date: "Jul 20 2024",
-    image: "/elegant-wedding-ceremony-outdoor-venue.jpg",
+    image: "/wedding3.jpg",
   },
   {
-    id: "corporate-gala",
-    names: "Annual Gala 2024",
-    category: "Events",
+    id: "Helen-Cermony",
+    names: "Helen's Graduate cerm. 2024",
+    category: "Graduations",
     date: "Oct 12 2024",
-    image: "/formal-gala-event-elegant-venue.jpg",
+    image: "/congA4.jpg",
   },
   {
-    id: "family-johnson",
-    names: "The Johnsons",
+    id: "tesfayes-family",
+    names: "Tesfayes Family Session",
     category: "Others",
     date: "May 08 2024",
-    image: "/family-portrait-outdoor-natural-setting.jpg",
+    image: "/fam1.jpg",
   },
 ]
 
@@ -84,7 +84,7 @@ export default function PortfolioPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] overflow-hidden">
         <img
-          src="/bride-with-flower-crown-close-up-portrait.jpg"
+          src="/other15.jpg"
           alt="Portfolio hero"
           className="w-full h-full object-cover"
         />

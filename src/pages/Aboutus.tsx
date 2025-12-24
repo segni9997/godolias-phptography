@@ -7,19 +7,19 @@ import { Link } from "react-router-dom"
 export default function AboutPage() {
   const galleryImages = [
     {
-      src: "/maternity-pregnancy-portrait-sunset-outdoors.jpg",
+      src: "/wedding3.jpg",
       alt: "Couple embracing at beach wedding",
     },
     {
-      src: "/romantic-couple-wedding-portrait-by-lake.jpg",
+      src: "/other12.jpg",
       alt: "Intimate wedding portrait",
     },
     {
-      src: "/wedding-reception-outdoor-evening-lights.jpg",
+      src: "/other13.jpg",
       alt: "Couple at sunset with mountain view",
     },
     {
-      src: "/woman-in-hat-outdoor-portrait-photography.jpg",
+      src: "/fam4.jpg",
       alt: "Wedding dress by window",
     },
   ]
@@ -30,7 +30,7 @@ export default function AboutPage() {
       {/* Hero Image */}
         <section className="relative h-[50vh] overflow-hidden">
         <img
-          src="/bride-with-flower-crown-close-up-portrait.jpg"
+          src="/babyshower17.jpg"
           alt="Portfolio hero"
           className="w-full h-full object-cover"
         />
@@ -69,7 +69,7 @@ export default function AboutPage() {
             <p className="font-['Playfair_Display'] italic text-3xl text-primary mb-6">Godolias</p>
             <Button
               asChild
-              className="bg-primary hover:bg-secondary text-foreground px-8 py-6 text-xs tracking-wider uppercase"
+              className="bg-primary hover:bg-secondary text-primary-foreground px-8 py-6 text-xs tracking-wider uppercase"
             >
               <Link to="/portfolio">Learn More</Link>
             </Button>
@@ -123,7 +123,7 @@ export default function AboutPage() {
               </p>
               <Button
                 asChild
-                className="bg-primary hover:bg-secondary text-foreground px-8 py-6 text-xs tracking-wider uppercase"
+                className="bg-primary hover:bg-secondary text-primary-foreground px-8 py-6 text-xs tracking-wider uppercase"
               >
                 <Link to="/portfolio">View Portfolio</Link>
               </Button>
@@ -132,10 +132,13 @@ export default function AboutPage() {
             {/* Right Images */}
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-[3/4]">
-                <img src="/couple-embracing-in-nature-golden-hour.jpg" alt="Couple embracing"  className="object-cover" />
+                <img src="/kid7.jpg" alt="Couple embracing"  className="object-cover" />
+                <div className="absolute bg-radial from-transparent via-background to-background"/>
               </div>
               <div className="relative aspect-[3/4] mt-12">
-                <img src="/bride-beach-portrait-sunset.jpg" alt="Elegant staircase"  className="object-cover" />
+                <img src="/babyshower3.jpg" alt="Elegant staircase"  className="object-cover" />
+                <div className="absolute bg-radial from-transparent via-background to-background"/>
+
               </div>
             </div>
           </div>

@@ -8,56 +8,109 @@ import { Link } from "react-router-dom"
 const packages = [
   {
     title: "Wedding",
-    image: "/outdoor-wedding-ceremony-with-guests.jpg",
-    features: ["Full Day Coverage", "Professionally Edited Photos", "Online Gallery", "Videographer Option"],
+    image: "/wedding4.jpg",
+    features: [
+      "Full Day Coverage",
+      "Professionally Edited Photos",
+      "Online Gallery",
+      "Videographer Option",
+    ],
     description:
-      "Enjoy full day coverage, professionally edited photos, and a beautiful online gallery to share with family.",
-    price: "Birr  2999",
-  },
-  {
-    title: "Engagement",
-    image: "/couple-engagement-photo-intimate-moment.jpg",
-    features: ["Professionally Edited Photos", "Online Gallery", "Choice of Location", "Videographer Option"],
-    description: "Celebrate your love with a romantic engagement session complete with professional editing.",
-    price: "Birr  1999",
-  },
-  {
-    title: "Birthday",
-    image: "/elegant-birthday-party-celebration-balloons.jpg",
-    features: ["Event Coverage", "Professionally Edited Photos", "Online Gallery", "Print Delivery Option"],
-    description:
-      "Capture every precious moment of your birthday celebration with stunning, professionally edited photographs.",
-    price: "Birr  799",
+      "Enjoy full-day wedding coverage with professionally edited photos and a private online gallery to relive your special day.",
+    price: "Birr 2999",
   },
   {
     title: "Portrait",
-    image: "/woman-in-hat-outdoor-portrait-photography.jpg",
-    features: ["In Studio / On Location", "Guidance on Posing & Dress", "Digital & Print Delivery", "Wardrobe Changes"],
-    description: "Enjoy a personalized portrait session with expert guidance that is based on living your true self.",
-    price: "Birr  399",
-  },
-  {
-    title: "Events",
-    image: "/corporate-event-conference-speakers-networking.jpg",
-    features: ["Corporate & Social Events", "Full Event Coverage", "Online Gallery", "Fast Turnaround"],
-    description:
-      "Professional event photography for corporate functions, galas, conferences, and special celebrations.",
-    price: "Birr  1299",
-  },
-  {
-    title: "Family",
-    image: "/happy-family-portrait-outdoor-natural-light.jpg",
+    image: "/kid3.jpg",
     features: [
-      "Outdoor / Studio Session",
+      "Studio or Outdoor Session",
+      "Guidance on Posing & Styling",
+      "Professionally Edited Photos",
+      "Digital Delivery",
+    ],
+    description:
+      "A personalized portrait session designed to capture natural expressions and timeless beauty.",
+    price: "Birr 399",
+  },
+  {
+    title: "Mediation",
+    image: "/shemglinna2.jpg",
+    features: [
+      "Traditional Ceremony Coverage",
+      "Candid & Formal Shots",
+      "Professionally Edited Photos",
+      "Online Gallery",
+    ],
+    description:
+      "Respectful documentation of Shimglina mediation ceremonies, preserving cultural values and meaningful moments.",
+    price: "Birr 999",
+  },
+  {
+    title: "Birthday",
+    image: "/hbd14.jpg",
+    features: [
+      "Event Coverage",
+      "Professionally Edited Photos",
+      "Online Gallery",
+      "Print Delivery Option",
+    ],
+    description:
+      "Capture every joyful moment of your birthday celebration with vibrant and professionally edited photographs.",
+    price: "Birr 799",
+  },
+  {
+    title: "Baby Shower",
+    image: "/babyshower3.jpg",
+    features: [
+      "Event Coverage",
+      "Candid & Group Photos",
+      "Professionally Edited Photos",
+      "Online Gallery",
+    ],
+    description:
+      "Celebrate new beginnings with beautiful baby shower photography full of warmth and emotion.",
+    price: "Birr 699",
+  },
+  {
+    title: "Graduation",
+    image: "/congA6.jpg",
+    features: [
+      "Ceremony & Portrait Coverage",
+      "Professionally Edited Photos",
+      "Family & Friends Shots",
+      "Online Gallery",
+    ],
+    description:
+      "Mark your academic milestone with professional graduation photography that captures pride and achievement.",
+    price: "Birr 599",
+  },
+  {
+    title: "Family Session",
+    image: "/fam1.jpg",
+    features: [
+      "Outdoor or Studio Session",
       "Multiple Family Members",
       "Professionally Edited Photos",
       "Print Packages Available",
     ],
     description:
-      "Preserve your family memories with timeless portraits that capture the love and connection you share.",
-    price: "Birr  599",
+      "Timeless family portraits that celebrate connection, love, and shared memories.",
+    price: "Birr 599",
   },
-]
+  {
+    title: "Event Coverage",
+    image: "/fam3.jpg",
+    features: [
+      "Corporate & Social Events",
+      "Full Event Coverage",
+      "Professionally Edited Photos",
+      "Fast Turnaround",
+    ],
+    description:
+      "Professional photography for corporate, cultural, and private events captured with precision and creativity.",
+    price: "Birr 1299",
+  },
+];
 
 const faqs = [
   {
@@ -95,7 +148,7 @@ export default function ServicesPage() {
       {/* Hero Section */}
         <section className="relative h-[50vh] overflow-hidden">
         <img
-          src="/bride-with-flower-crown-close-up-portrait.jpg"
+          src="/babyshower17.jpg"
           alt="Portfolio hero"
           className="w-full h-full object-cover"
         />
@@ -110,7 +163,7 @@ export default function ServicesPage() {
             <h1 className="text-4xl md:text-5xl font-serif text-secondary">Photography Packages</h1>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {packages.map((pkg, index) => (
               <Card key={index} className="overflow-hidden border border-background shadow-sm pt-0">
                 <CardContent className="p-0">
@@ -145,7 +198,7 @@ export default function ServicesPage() {
           <div className="text-center">
           <Link to="/contact">
             <Button className="bg-primary hover:bg-secondary text-primary-foreground px-8 py-6 text-xs tracking-wider uppercase">
-              BOOK NOW
+              CONTACT US NOW
             </Button>
           </Link>
           </div>
@@ -156,7 +209,7 @@ export default function ServicesPage() {
       <section className="relative h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0 bg-linear-to-t from-background to-transparent">
           <img
-            src="/background-peony-flowers-soft-romantic-background.jpg"
+            src="/shemglinna1.jpg"
             alt="Elegant flowers"
             className="w-full h-full object-cover opacity-40"
           />
@@ -200,7 +253,7 @@ export default function ServicesPage() {
                 className="w-full h-[400px] object-cover"
               />
               <img
-                src="/golden-wedding-rings-on-background-fabric-close-up.jpg"
+                src="/golden-wedding-rings-on-white-fabric-close-up.jpg"
                 alt="Wedding rings"
                 className="w-full h-[400px] object-cover"
               />
