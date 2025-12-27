@@ -22,9 +22,19 @@ export function Navbar() {
   ]
 
   return (
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-sm ">
+        <div className="absolute top-5 right-0">
+              <ThemeToggle />
+
+        {/* Mobile menu button */}
+          <div className="flex items-center space-x-4">
+            <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? <X className="h-6  text-primary w-6" /> : <Menu className="h-6 w-6 text-primary " />}
+            </Button>
+          </div>
+</div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="flex items-center justify-around h-20 relative">
           {/* Desktop Navigation - Left Links */}
           <div className="hidden md:flex items-center space-x-8">
             {leftLinks.map((link) => (
@@ -58,13 +68,7 @@ export function Navbar() {
             {/* <ThemeToggle /> */}
           </div>
 
-          {/* Mobile menu button */}
-          <div className="flex items-center space-x-4">
-            <ThemeToggle />
-            <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <X className="h-6  text-primary w-6" /> : <Menu className="h-6 w-6 text-primary " />}
-            </Button>
-          </div>
+    
         </div>
 
         {/* Mobile Navigation */}

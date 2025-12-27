@@ -125,7 +125,7 @@ const gridVariants = {
                     />
                   </div>
                   <div className="p-8 text-center ">
-                    <h3 className="text-2xl font-serif text-orange-400 mb-6">
+                    <h3 className="text-2xl font-serif text-foreground mb-6">
                       {pkg.title}
                     </h3>
                     <div className="w-12 h-px bg-background-300 mx-auto mb-6" />

@@ -120,24 +120,24 @@ export function Portfolio() {
   }
 
   return (
-    <section id="portfolio" className="py-24 bg-background/90">
+    <section id="portfolio" className="py-24 bg-primary/95">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="text-xs tracking-[0.3em] uppercase text-primary mb-4">Portfolio</div>
-          <h2 className="text-4xl md:text-5xl font-serif text-secondary">Featured Story</h2>
+          <div className="text-xs tracking-[0.3em] uppercase text-primary-foreground/70 mb-4">Portfolio</div>
+          <h2 className="text-4xl md:text-5xl font-serif text-secondary-foreground">Featured Story</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Content - Left Side */}
-          <div className={`space-y-6 transition-opacity duration-500 ${isAnimating ? "opacity-0" : "opacity-100"}`}>
-            <div className="text-8xl md:text-9xl font-serif text-secondary">{currentItem.number}</div>
+          <div className={`space-y-6 transition-opacity duration-700 ${isAnimating ? "opacity-30" : "opacity-100"}`}>
+            <div className="text-8xl md:text-9xl font-serif text-primary-foreground/85">{currentItem.number}</div>
             <div>
-              <div className="text-sm tracking-wider uppercase text-primary mb-2">{currentItem.category}</div>
-              <h3 className="text-3xl font-serif text-primary">{currentItem.names}</h3>
+              <div className="text-sm tracking-wider uppercase text-primary-foreground mb-2">{currentItem.category}</div>
+              <h3 className="text-3xl font-serif text-primary-foreground">{currentItem.names}</h3>
             </div>
-            <p className="text-secondary leading-relaxed">{currentItem.description}</p>
-            <Link to={`/portfolio/${currentItem.id}`}>
-              <Button variant="outline" className="border-primary text-secondary hover:bg-primary/20 bg-transparent">
+            <p className="text-primary-foreground/50 leading-relaxed">{currentItem.description}</p>
+            <Link to={`/portfolio`}>
+              <Button variant="outline" className="border-background text-secondary-foreground hover:bg-primary-foreground/20 bg-transparent">
                 VIEW GALLERY
               </Button>
             </Link>
@@ -146,7 +146,7 @@ export function Portfolio() {
             <div className="flex items-center gap-6 pt-6">
               <button
                 onClick={handlePrev}
-                className="text-secondary hover:text-primary transition-colors"
+                className="text-secondary-foreground hover:text-primary-foreground/60 transition-colors"
                 aria-label="Previous"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -159,7 +159,7 @@ export function Portfolio() {
                     key={index}
                     onClick={() => goToSlide(index)}
                     className={`h-2 rounded-full transition-all ${
-                      index === currentIndex ? "w-8 bg-primary" : "w-2 bg-secondary"
+                      index === currentIndex ? "w-8 bg-background/80" : "w-2 bg-background"
                     }`}
                     aria-label={`Go to slide ${index + 1}`}
                   />
@@ -167,7 +167,7 @@ export function Portfolio() {
               </div>
               <button
                 onClick={handleNext}
-                className="text-secondary hover:text-primary transition-colors"
+                className="text-secondary-foreground hover:text-primary-foreground/60  transition-colors"
                 aria-label="Next"
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -178,23 +178,23 @@ export function Portfolio() {
           </div>
 
           {/* Image - Right Side */}
-          <div className={`relative transition-opacity duration-500 ${isAnimating ? "opacity-0" : "opacity-100"}`}>
+          <div className={`relative transition-opacity duration-700 ${isAnimating ? "opacity-0" : "opacity-100"}`}>
             <div className="relative h-[600px] overflow-hidden">
               <img
                 src={currentItem.image || "/placeholder.svg"}
                 alt={currentItem.names}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover bg-radial from-primary to-transparent"
               />
             </div>
           </div>
         </div>
 
         {/* View All Portfolio Link */}
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <Link to="/portfolio">
             <Button className="bg-primary-600 hover:bg-primary-700 text-background px-8">VIEW ALL PORTFOLIO</Button>
           </Link>
-        </div>
+        </div> */}
       </div>
           <div className="mt-24 bg-background p-8 md:p-12">
           <div className="text-center mb-12">

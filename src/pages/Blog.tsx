@@ -72,8 +72,11 @@ export default function Blog() {
             className="headers flex justify-center flex-col items-center gap-1 mt-10"
             variants={itemVariants}
           >
-            <h1 className="uppercase leading-tight">BLOG</h1>
-            <span className="text-xl">Latest Stories</span>
+          
+              <div className="text-center mb-16">
+            <div className="text-xs tracking-[0.3em] uppercase text-primary mb-4">BLOG</div>
+            <h1 className="text-4xl md:text-5xl font-serif text-secondary ">Latest Stories</h1>
+          </div>
           </motion.div>
           <motion.div
             className="mt-10 mb-10"
