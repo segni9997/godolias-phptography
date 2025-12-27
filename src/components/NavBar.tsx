@@ -22,7 +22,7 @@ export function Navbar() {
   ]
 
   return (
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/60 backdrop-blur-sm ">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm ">
         <div className="absolute top-5 right-0">
               <ThemeToggle />
 

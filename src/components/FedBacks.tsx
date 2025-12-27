@@ -1,134 +1,204 @@
 import { useEffect, useState } from "react";
-const slides = [
+
+const testimonials = [
   {
     src: "/wedding1.jpg",
-    caption: "“Absolutely amazing! They captured every moment of our wedding perfectly. The photos are timeless and full of emotion.” – Selam & Dawit",
+    caption:
+      '"Absolutely amazing! They captured every moment of our wedding perfectly. The photos are timeless and full of emotion." – Selam & Dawit',
   },
   {
     src: "/hbd7.jpg",
-    caption: "“Our family birthday celebration was captured beautifully. Every smile and laugh was perfectly documented.” – Yonas’ Family",
+    caption:
+      '"Our family birthday celebration was captured beautifully. Every smile and laugh was perfectly documented." – Yonas\' Family',
   },
   {
     src: "/other12.jpg",
-    caption: "“A truly professional portrait session. Rahel felt confident and natural, and the final images exceeded our expectations.” – Rahel",
+    caption:
+      '"A truly professional portrait session. Rahel felt confident and natural, and the final images exceeded our expectations." – Rahel',
   },
   {
     src: "/babyshower16.jpg",
-    caption: "“The maternity session was heartwarming. The photographer made us feel at ease, and the photos are simply stunning.” – Mekdes & Baby",
+    caption:
+      '"The maternity session was heartwarming. The photographer made us feel at ease, and the photos are simply stunning." – Mekdes & Baby',
   },
   {
     src: "/fam3.jpg",
-    caption: "“Our family gathering was captured with so much care and creativity. Every candid moment shines through the photos!” – Addis Family",
+    caption:
+      '"Our family gathering was captured with so much care and creativity. Every candid moment shines through the photos!" – Addis Family',
   },
 ];
 
+const galleryImages = [
+  {
+    id: 1,
+    src: "/wedding1.jpg",
+    alt: "Wedding ceremony",
+    category: "Wedding",
+    span: "row-span-2",
+    caption: testimonials[0].caption,
+  },
+  {
+    id: 2,
+    src: "/hbd7.jpg",
+    alt: "Birthday celebration",
+    category: "Birthday",
+    span: "row-span-1",
+    caption: testimonials[1].caption,
+  },
+  {
+    id: 3,
+    src: "/other12.jpg",
+    alt: "Portrait session",
+    category: "Portrait",
+    span: "row-span-2",
+    caption: testimonials[2].caption,
+  },
+  {
+    id: 4,
+    src: "/babyshower16.jpg",
+    alt: "Baby shower",
+    category: "Baby Shower",
+    span: "row-span-1",
+    caption: testimonials[3].caption,
+  },
+  {
+    id: 5,
+    src: "/fam3.jpg",
+    alt: "Family gathering",
+    category: "Family",
+    span: "row-span-2",
+    caption: testimonials[4].caption,
+  },
+  {
+    id: 6,
+    src: "/hbd6.jpg",
+    alt: "Birthday party",
+    category: "Birthday",
+    span: "row-span-1",
+  },
+  {
+    id: 7,
+    src: "/babyshower17.jpg",
+    alt: "Maternity photoshoot",
+    category: "Maternity",
+    span: "row-span-2",
+  },
+  {
+    id: 8,
+    src: "/other15.jpg",
+    alt: "Professional shoot",
+    category: "Professional",
+    span: "row-span-1",
+  },
+    {
+    id: 9,
+    src: "/shemglinna1.jpg",
+    alt: "Mesiation cermony",
+    category: "Mediation",
+    span: "row-span-1",
+  },
+  {
+    id: 10,
+    src: "/congQ6.jpg",
+    alt: "Graduation shoot",
+    category: "Graduation",
+    span: "row-span-1",
+  },
+    {
+    id: 11,
+    src: "/babyshower17.jpg",
+   alt: "Maternity photoshoot",
+    category: "Maternity",
+    span: "col-span-2",
+  },
+];
 
-export default function FeedBack() {
-  const [current, setCurrent] = useState(0);
+export function FeedBack() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 3500); // slideshow speed
+      setActiveIndex((prev) => {
+        if (prev === null) return 0;
+        return (prev + 1) % galleryImages.length;
+      });
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="grid md:grid-cols-3 gap-8 bg-background">
-
-      {/* LEFT IMAGE */}
-      <div className="hidden md:block relative h-[500px]">
-        <div className="absolute bottom-44 -left-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
+    <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] gap-4">
+      {galleryImages.map((image, index) => (
+        <div
+          key={image.id}
+          className={`
+            ${image.span}
+            relative overflow-hidden rounded-lg shadow-lg
+            cursor-pointer group
+            transition-all duration-500 ease-out
+            ${
+              activeIndex === index
+                ? "ring-4 ring-amber-500 scale-[1.02]"
+                : "hover:scale-[1.02]"
+            }
+          `}
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
           <img
-            src="/hbd6.jpg"
-            alt="Client photo 1"
-            className="h-full w-full object-cover"
-          />
-        </div>  
-         <div className="absolute bottom-1 h-64 border-8 border-muted-foreground/80 w-full">
-          <img
-            src="/hbd6.jpg"
-            alt="Client photo 1"
-            className="h-full w-full object-cover"
-          />
-        </div>
-        <div className="absolute -bottom-12 -right-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
-          <img
-            src="/hbd6.jpg"
-            alt="Client photo 1"
-            className="h-full w-full object-cover"
-          />
-        </div>  
-      </div>
-
-      {/* CENTER SLIDESHOW */}
-      <div className="relative h-[500px] overflow-hidden border-8  ">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
+            src={image.src}
+            alt={image.alt}
             className={`
-              absolute inset-0
-              transition-all duration-1000 ease-in-out
-              ${index === current ? "opacity-100 scale-100 z-10" : "opacity-0 scale-105 z-0"}
+              w-full h-full object-cover
+              transition-all duration-700 ease-out
+              ${
+                hoveredIndex === index || activeIndex === index
+                  ? "scale-110 brightness-75"
+                  : "scale-100 brightness-100"
+              }
+            `}
+          />
+
+          <div
+            className={`
+              absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent
+              transition-opacity duration-500
+              flex flex-col justify-end
+              ${
+                hoveredIndex === index || activeIndex === index
+                  ? "opacity-100"
+                  : "opacity-0"
+              }
             `}
           >
-            <img
-              src={slide.src}
-              alt={slide.caption}
-              className="w-full h-full object-cover"
-            />
-
-            {/* CAPTION */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full
-                            bg-background/60 backdrop-blur-md
-                            text-white
-                            px-5 py-3
-                            
-                            text-sm md:text-base
-                            font-semibold
-                            shadow-lg">
-              {slide.caption}
+            <div className="p-4 space-y-3">
+              <div className="inline-block px-3 py-1 text-xs font-semibold tracking-wide uppercase bg-amber-500 text-white rounded-full w-fit">
+                {image.category}
+              </div>
+              {image.caption && (
+                <p className="text-white text-xs leading-relaxed font-light">
+                  {image.caption}
+                </p>
+              )}
             </div>
           </div>
-        ))}
-      </div>
 
-      {/* RIGHT IMAGE */}
-      {/* <div className="relative h-64">
-        <div className="absolute bottom-1 h-52 border-8 border-muted-foreground/80 w-full">
-          <img
-            src="/professional-woman-portrait-white-blazer.jpg"
-            alt="Client photo 3"
-            className="w-full h-full object-cover"
-          />
-
-        </div>
-      </div> */}
-  <div className="hidden md:block relative h-[500px]">
-        <div className="absolute bottom-44 -right-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
-          <img
-             src="/babyshower17.jpg"
-            alt="Client photo 1"
-            className="h-full w-full object-cover"
-          />
-        </div>  
-         <div className="absolute bottom-1 h-64 border-8 border-muted-foreground/80 w-full">
-          <img
-             src="/babyshower17.jpg"
-            alt="Client photo 1"
-            className="h-full w-full object-cover"
+          <div
+            className={`
+              absolute top-4 right-4
+              w-2 h-2 rounded-full bg-amber-500
+              transition-all duration-300
+              ${
+                activeIndex === index
+                  ? "scale-150 shadow-lg shadow-amber-500/50"
+                  : "scale-0"
+              }
+            `}
           />
         </div>
-        <div className="absolute -bottom-12 -left-7 h-32 border-8 border-muted-foreground/80 w-1/3 z-10">
-          <img
-             src="/babyshower17.jpg"
-            alt="Client photo 1"
-            className="h-full w-full object-cover"
-          />
-        </div>  
-      </div>
-
+      ))}
     </div>
   );
 }

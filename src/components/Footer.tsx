@@ -19,16 +19,16 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-background ">
+    <footer className="bg-secondary ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="text-2xl font-serif italic text-primary mb-2">Godolias</div>
-          <div className="text-xs tracking-widest text-secondary uppercase">photo video & Bridal</div>
+          <div className="text-2xl font-serif italic text-primary-foreground/90 mb-2">Godolias</div>
+          <div className="text-xs tracking-widest text-secondary-foreground/80 uppercase">photo video & Bridal</div>
         </div>
 
         {/* Description */}
-        <p className="text-center text-primary text-sm max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-center text-secondary-foreground text-sm max-w-2xl mx-auto mb-8 leading-relaxed">
           Godolias is a freelance wedding photographer who specializes in creating art through beautiful, authentic
           images. She listens carefully to your story, capturing every moment, big or small. Her passion for life and
           capturing authentic moments creates art that tells a powerful story.
@@ -40,7 +40,7 @@ export function Footer() {
             <Link
               key={item.name}
               to={item.to}
-              className="text-xs tracking-wider text-foreground hover:text-foreground/80 transition-colors"
+              className="text-xs tracking-wider text-secondary-foreground hover:text-foreground/80 transition-colors"
             >
               {item.name}
             </Link>
@@ -53,15 +53,15 @@ export function Footer() {
             <Link
               key={index}
               to={social.to}
-              className="w-10 h-10 flex items-center justify-center bg-secondary  text-foreground hover:bg-secondary/80 transition-colors"
+              className="w-10 h-10 flex items-center justify-center bg-background rounded-full  text-foreground hover:bg-secondary/80 transition-colors"
             >
-              <social.icon className="w-4 h-4 text-primary-foreground" />
+              <social.icon className="w-4 h-4 text-foreground" />
             </Link>
           ))}
         </div>
 
         {/* Copyright */}
-        <div className="text-center text-xs text-secondary">© {new Date().getFullYear()} Godolias photo video & Bridal</div>
+        <div className="text-center text-xs text-secondary-foreground">© {new Date().getFullYear()} Godolias photo video & Bridal</div>
       </div>
     </footer>
   )
