@@ -40,8 +40,7 @@ export function Contact() {
                     <h3 className="text-lg font-semibold text-primary-foreground/90 mb-1">
                       Phone Numbers
                     </h3>
-                    <p className="text-primary-foreground">+251 983 604 770</p>
-                    <p className="text-primary-foreground">+251 965 567 323</p>
+                    <p className="text-primary-foreground">+251921381350</p>
                   </div>
                 </div>
 

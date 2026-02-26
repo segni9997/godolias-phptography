@@ -1,6 +1,6 @@
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react"
+import { Facebook, Instagram, Youtube } from "lucide-react"
 import { Link } from "react-router-dom"
-
+import { BsTelegram } from "react-icons/bs"
 export function Footer() {
   const navigation = [
     { name: "Home", to: "#home" },
@@ -14,7 +14,7 @@ export function Footer() {
   const socialLinks = [
     { icon: Facebook, to: "#" },
     { icon: Instagram, to: "#" },
-    { icon: Twitter, to: "#" },
+    { icon: BsTelegram, to: "#" },
     { icon: Youtube, to: "#" },
   ]
 

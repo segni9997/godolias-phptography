@@ -130,7 +130,7 @@ export default function PortfolioPage() {
                   </div>
                   <div className="p-6 text-center">
                     <div className="text-sm tracking-wider uppercase text-primary/80 mb-2">{item.category}</div>
-                    <h3 className="text-2xl font-serif text-secondary mb-2">{item.names}</h3>
+                    {/* <h3 className="text-2xl font-serif text-secondary mb-2">{item.names}</h3> */}
                     <div className="text-sm text-muted-foreground">{item.date}</div>
                   </div>
                 </div>

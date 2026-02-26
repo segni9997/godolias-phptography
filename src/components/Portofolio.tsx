@@ -148,9 +148,9 @@ export function Portfolio() {
           <div className="text-sm tracking-wider uppercase text-primary-foreground mb-2">
             {currentItem.category}
           </div>
-          <h3 className="text-3xl font-serif text-primary-foreground">
+          {/* <h3 className="text-3xl font-serif text-primary-foreground">
             {currentItem.names}
-          </h3>
+          </h3> */}
         </div>
 
         <p className="text-primary-foreground/50 leading-relaxed">

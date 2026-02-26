@@ -185,10 +185,10 @@ export default function ServicesPage() {
 
                     <p className="text-sm text-foreground/60 text-center mb-6 leading-relaxed">{pkg.description}</p>
 
-                    <div className="text-center">
+                    {/* <div className="text-center">
                       <span className="text-xs text-stone-400 uppercase tracking-wider">starting </span>
                       <span className="text-2xl font-serif text-secondary">{pkg.price}</span>
-                    </div>
+                    </div> */}
                   </div>
                 </CardContent>
               </Card>
