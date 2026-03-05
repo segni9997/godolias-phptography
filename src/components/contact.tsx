@@ -40,7 +40,8 @@ export function Contact() {
                     <h3 className="text-lg font-semibold text-primary-foreground/90 mb-1">
                       Phone Numbers
                     </h3>
-                    <p className="text-primary-foreground">+251921</p>
+                                      <p className="text-primary-foreground">+251 921 381 350</p>
+
                   </div>
                 </div>
 
@@ -68,9 +69,7 @@ export function Contact() {
                       <Instagram className="w-5 h-5 text-primary-foreground transition-colors duration-300 group-hover:text-white" />
                     </a>
                   </div>
-                  <p className="text-sm text-primary-foreground mt-3">
-                    @GodoliasPhotography
-                  </p>
+               
                 </div>
               </div>
             </div>
