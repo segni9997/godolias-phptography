@@ -2,13 +2,14 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom"
 import { AnimatePresence, motion } from "framer-motion"
 import Home from "./pages/Home"
 import { Navbar } from "./components/NavBar"
-import Blog from "./pages/Blog"
+// import Blog from "./pages/Blog"
 import PortfolioPage from "./pages/portofolio"
 import AboutPage from "./pages/Aboutus"
 import ServicesPage from "./pages/services"
 import PortfolioItemPage from "./components/portofolioDetail"
-import BlogPostPage from "./components/BlogDetail"
+// import BlogPostPage from "./components/BlogDetail"
 import { ContactPage } from "./pages/Contactus"
+import { Gallery } from "./components/gallery"
 
 
 
@@ -29,17 +30,17 @@ function AnimatedRoutes() {
             <Home/>
           </motion.div>
         }/>
-        <Route path="/blogs" element={
+        <Route path="/gallery" element={
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Blog/>
+            <Gallery/>
           </motion.div>
         }/>
-        <Route path="/blogs/:id" element={
+        {/* <Route path="/blogs/:id" element={
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -48,7 +49,7 @@ function AnimatedRoutes() {
           >
             <BlogPostPage/>
           </motion.div>
-        }/>
+        }/> */}
         <Route path="/contact" element={
           <motion.div
             initial={{ opacity: 0 }}

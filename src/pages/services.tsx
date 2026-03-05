@@ -171,9 +171,9 @@ export default function ServicesPage() {
                     <img src={pkg.image || "/placeholder.svg"} alt={pkg.title} className="w-full h-full object-cover" />
                   </div>
                   <div className="p-8 ">
-                    <h3 className="text-2xl font-serif text-primary mb-6 text-center italic">{pkg.title}</h3>
+                    <h3 className="text-2xl font-serif text-primary  text-center italic">{pkg.title}</h3>
 
-                    <ul className="space-y-3 mb-6 text-sm text-muted-foreground/70">
+                    {/* <ul className="space-y-3 mb-6 text-sm text-muted-foreground/70">
                       {pkg.features.map((feature, idx) => (
                         <li key={idx} className="text-center">
                           {feature}
@@ -183,7 +183,7 @@ export default function ServicesPage() {
 
                     <div className="w-16 h-px bg-muted mx-auto mb-6" />
 
-                    <p className="text-sm text-foreground/60 text-center mb-6 leading-relaxed">{pkg.description}</p>
+                    <p className="text-sm text-foreground/60 text-center mb-6 leading-relaxed">{pkg.description}</p> */}
 
                     {/* <div className="text-center">
                       <span className="text-xs text-stone-400 uppercase tracking-wider">starting </span>

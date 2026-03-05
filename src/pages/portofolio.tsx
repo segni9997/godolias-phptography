@@ -4,68 +4,76 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 const portfolioCategories = [
-  {
-    id: "abebe-mekdes",
+ 
+   {
+    id: "1",
     names: "Abebe & Mekdes Wedding",
     category: "Wedding",
     date: "Jan 11 2025",
-    image: "/wedding1.jpg",
+    image: "/weddingn2.jpg",
   },
   {
-    id: "selam-portrait",
+    id: "2",
     names: "Selam Portrait Session",
     category: "Portrait",
     date: "Mar 22 2024",
     image: "/other1.jpg",
   },
   {
-    id: "kebede-tsegaye",
+    id: "3",
     names: "Kebede & Tsegaye Wedding",
     category: "Wedding",
     date: "Aug 15 2024",
     image: "/wedding2.jpg",
   },
   {
-    id: "mekdes-birthday",
+    id: "4",
     names: "Mekdes's 30th Birthday",
     category: "Birthday",
     date: "Sep 10 2024",
-    image: "/hbd1.jpg",
+    image: "/hbd12.jpg",
   },
   {
-    id: "Biniam-cermony",
+    id: "5",
     names: "Biniam's  KG3 Graduation cerm.",
    category: "Graduations",
     date: "Nov 05 2024",
     image: "/cong1.jpg",
   },
   {
-    id: "alem-baby",
+    id: "6",
     names: "Alem Baby Shower",
     category: "Others",
     date: "Dec 18 2024",
-    image: "/babyshower1.jpg",
+    image: "/other2.jpg",
   },
+  // {
+  //   id: "dawit-helen",
+  //   names: "Dawit & Helen Wedding",
+  //   category: "Wedding",
+  //   date: "Jul 20 2024",
+  //   image: "/weddingn3.jpg",
+  // },
   {
-    id: "dawit-helen",
-    names: "Dawit & Helen Wedding",
-    category: "Wedding",
-    date: "Jul 20 2024",
-    image: "/wedding3.jpg",
-  },
-  {
-    id: "Helen-Cermony",
+    id: "7",
     names: "Helen's Graduate cerm. 2024",
     category: "Graduations",
     date: "Oct 12 2024",
     image: "/congA4.jpg",
   },
   {
-    id: "tesfayes-family",
+    id: "8",
     names: "Tesfayes Family Session",
     category: "Others",
     date: "May 08 2024",
-    image: "/fam1.jpg",
+    image: "/kid1.jpg",
+  },
+    {
+    id: "9",
+    names: "couple",
+    category: "couples",
+    date: "May 08 2024",
+    image: "/couple1.jpg",
   },
 ]
 

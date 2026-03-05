@@ -1,7 +1,7 @@
 
-import { Button } from "@/components/ui/button"
+// import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import { FeedBack } from "./FedBacks";
 
 const portfolioItems = [
@@ -145,7 +145,7 @@ export function Portfolio() {
         </div>
 
         <div>
-          <div className="text-sm tracking-wider uppercase text-primary-foreground mb-2">
+          <div className="text-4xl tracking-wider uppercase text-primary-foreground mb-2">
             {currentItem.category}
           </div>
           {/* <h3 className="text-3xl font-serif text-primary-foreground">
@@ -153,18 +153,18 @@ export function Portfolio() {
           </h3> */}
         </div>
 
-        <p className="text-primary-foreground/50 leading-relaxed">
+        {/* <p className="text-primary-foreground/50 leading-relaxed">
           {currentItem.description}
-        </p>
+        </p> */}
 
-        <Link to="/portfolio">
+        {/* <Link to="/portfolio">
           <Button
             variant="outline"
             className="border-background text-secondary-foreground hover:bg-primary-foreground/20 bg-transparent"
           >
             VIEW GALLERY
           </Button>
-        </Link>
+        </Link> */}
 
         {/* Navigation */}
         <div className="flex items-center gap-6 pt-6">
