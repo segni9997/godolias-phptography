@@ -54,6 +54,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <ThemeToggle />
           </div>
 
           {/* Mobile: Logo, ThemeToggle, and Menu Button */}
@@ -63,7 +64,7 @@ export function Navbar() {
               <div className="font-['Playfair_Display'] italic text-xl text-primary">Godolias</div>
             </Link>
 
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 ">
               <ThemeToggle />
               <Button 
                 variant="ghost" 
