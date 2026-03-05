@@ -1,4 +1,5 @@
-import { Facebook, Instagram, MapPin, Phone, Twitter } from "lucide-react";
+import { Facebook, Instagram, MapPin, Phone } from "lucide-react";
+import { BsTelegram } from "react-icons/bs";
 // import { GalleryWall } from "./GalleryWall";
 
 export function ContactPage() {
@@ -55,8 +56,8 @@ export function ContactPage() {
                     <h3 className="text-lg font-semibold text-primary-foreground/90 mb-1">
                       Phone Numbers
                     </h3>
-                    <p className="text-primary-foreground">+251 983 604 770</p>
-                    <p className="text-primary-foreground">+251 965 567 323</p>
+                    <p className="text-primary-foreground">+251 921 381 350</p>
+                    {/* <p className="text-primary-foreground">+251 965 567 323</p> */}
                   </div>
                 </div>
 
@@ -72,10 +73,10 @@ export function ContactPage() {
                       <Facebook className="w-5 h-5 text-primary-foreground transition-colors duration-300 group-hover:text-white" />
                     </a>
                     <a
-                      href="#"
+                      href="https://t.me/godoliaspictures"
                       className="w-10 h-10 rounded-full bg-primary/50 border-2 border-secondary flex items-center justify-center transition-all duration-300 hover:bg-sky-500 hover:border-sky-500 group"
                     >
-                      <Twitter className="w-5 h-5 text-primary-foreground transition-colors duration-300 group-hover:text-white" />
+                      <BsTelegram className="w-5 h-5 text-primary-foreground transition-colors duration-300 group-hover:text-white" />
                     </a>
                     <a
                       href="#"
@@ -84,9 +85,9 @@ export function ContactPage() {
                       <Instagram className="w-5 h-5 text-primary-foreground transition-colors duration-300 group-hover:text-white" />
                     </a>
                   </div>
-                  <p className="text-sm text-primary-foreground mt-3">
+                  {/* <p className="text-sm text-primary-foreground mt-3">
                     @GodoliasPhotography
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

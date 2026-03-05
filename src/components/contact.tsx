@@ -1,6 +1,6 @@
 
-import { Facebook, Instagram, MapPin, Phone, Twitter } from "lucide-react"
-
+import { Facebook, Instagram, MapPin, Phone } from "lucide-react"
+import { BsTelegram } from "react-icons/bs"
 export function Contact() {
 
   return (
@@ -40,7 +40,7 @@ export function Contact() {
                     <h3 className="text-lg font-semibold text-primary-foreground/90 mb-1">
                       Phone Numbers
                     </h3>
-                    <p className="text-primary-foreground">+251921381350</p>
+                    <p className="text-primary-foreground">+251921</p>
                   </div>
                 </div>
 
@@ -59,7 +59,7 @@ export function Contact() {
                       href="#"
                       className="w-10 h-10 rounded-full bg-primary/50 border-2 border-secondary flex items-center justify-center transition-all duration-300 hover:bg-sky-500 hover:border-sky-500 group"
                     >
-                      <Twitter className="w-5 h-5 text-primary-foreground transition-colors duration-300 group-hover:text-white" />
+                      <BsTelegram className="w-5 h-5 text-primary-foreground transition-colors duration-300 group-hover:text-white" />
                     </a>
                     <a
                       href="#"
