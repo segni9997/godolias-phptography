@@ -154,6 +154,8 @@ const portfolioData: Record<
       "/kid5.jpg",
       "/kid6.jpg",
       "/kid7.jpg",
+      "/kid13.jpg",
+      "/kid14.jpg"
     ],
   },
    "9": {
@@ -166,6 +168,144 @@ const portfolioData: Record<
     gallery: [
       
     ],
+  },
+   "10": {
+    names: "HBD",
+    category: "Birthday",
+    date: "Mar 08 2026",
+    description:
+      "A warm family session capturing love, connection, and joyful moments shared among the Tesfayes family in a natural and intimate setting.",
+    mainImage: "/hbdn10.jpg",
+    gallery: [
+      "/hbdn13.jpg",
+      "/hbdn11.jpg",
+      "/hbdn12.jpg",
+      "/hbdn10.jpg"
+
+    ],
+
+  },
+
+     "11": {
+    names: "Babyshower",
+    category: "Babyshower",
+    date: "Mar 08 2026",
+    description:
+      "A warm family session capturing love, connection, and joyful moments shared among the Tesfayes family in a natural and intimate setting.",
+    mainImage: "/babyshower2.jpg",
+    gallery: [
+      "/babyshower1.jpg",
+      "/babyshower3.jpg",
+   
+
+    ],
+    
+  },
+   "12": {
+    names: "Babyshower",
+    category: "Babyshower",
+    date: "Jan 08 2026",
+    description:
+      "A warm family session capturing love, connection, and joyful moments shared among the Tesfayes family in a natural and intimate setting.",
+    mainImage: "/babyshower8.jpg",
+    gallery: [
+      "/babyshower8.jpg",
+      "/babyshower9.jpg",
+   
+
+    ],
+    
+  },
+     "13": {
+    names: "Babyshower",
+    category: "Babyshower",
+    date: "Jan 08 2026",
+    description:
+      "A warm family session capturing love, connection, and joyful moments shared among the Tesfayes family in a natural and intimate setting.",
+    mainImage: "/babyshower11.jpg",
+    gallery: [
+      "/babyshower13.jpg",
+      "/babyshower12.jpg",
+   
+
+    ],
+    
+  },
+
+     "14": {
+    names: "Babyshower",
+    category: "Babyshower",
+    date: "Jan 08 2026",
+    description:
+      "A warm family session capturing love, connection, and joyful moments shared among the Tesfayes family in a natural and intimate setting.",
+    mainImage: "/babyshower14.jpg",
+    gallery: [
+      "/babyshower15.jpg",
+      "/babyshower16.jpg",
+      "/babyshower17.jpg",
+   
+
+    ],
+    
+  },
+     "15": {
+    names: "Babyshower",
+    category: "Babyshower",
+    date: "Jan 08 2026",
+    description:
+      "A warm family session capturing love, connection, and joyful moments shared among the Tesfayes family in a natural and intimate setting.",
+    mainImage: "/babyshowern1.jpg",
+    gallery: [
+      "/babyshowern2.jpg",
+      "/babyshowern3.jpg",
+   
+
+    ],
+    
+  },
+   "16": {
+    names: "Babyshower",
+    category: "Babyshower",
+    date: "Jan 08 2026",
+    description:
+      "A warm family session capturing love, connection, and joyful moments shared among the Tesfayes family in a natural and intimate setting.",
+    mainImage: "/shemglinna1.jpg",
+    gallery: [
+      "/shemglinna2.jpg",
+      "/shemglinna3.jpg",
+      "/shemglinna4.jpg"
+   
+
+    ],
+    
+  },
+   "17": {
+    names: "Portrait",
+    category: "Portrait",
+    date: "Jan 08 2026",
+    description:
+      "A warm family session capturing love, connection, and joyful moments shared among the Tesfayes family in a natural and intimate setting.",
+    mainImage: "/other8.jpg",
+    gallery: [
+      "/other2.jpg",
+      "/other3.jpg",
+      "/other4.jpg",
+      "/other9.jpg",
+      "/other10.jpg",
+      "/other11.jpg",
+      "/other12.jpg",
+      "/other13.jpg",
+      "/other7.jpg",
+      "/other15.jpg",
+
+      
+      
+
+
+   
+
+    ],
+    
   },
 };
 

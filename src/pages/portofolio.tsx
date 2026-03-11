@@ -75,6 +75,63 @@ const portfolioCategories = [
     date: "May 08 2024",
     image: "/couple1.jpg",
   },
+
+   {
+    id: "10",
+    names: "Birthday",
+    category: "Birthday",
+    date: "Mar 08 2026",
+    image: "/hbdn12.jpg",
+  },
+     {
+    id: "11",
+    names: "Babyshower",
+    category: "Babyshower",
+    date: "Mar 08 2026",
+    image: "/babyshower1.jpg",
+  },
+       {
+    id: "12",
+    names: "Babyshower",
+    category: "Babyshower",
+    date: "Mar 08 2026",
+    image: "/babyshower8.jpg",
+  },
+      {
+    id: "13",
+    names: "Babyshower",
+    category: "Babyshower",
+    date: "Mar 08 2026",
+    image: "/babyshower11.jpg",
+  },
+      {
+    id: "14",
+    names: "Babyshower",
+    category: "Babyshower",
+    date: "Mar 08 2026",
+    image: "/babyshower15.jpg",
+  },
+        {
+    id: "15",
+    names: "Babyshower",
+    category: "Babyshower",
+    date: "Mar 08 2026",
+    image: "/babyshowern2.jpg",
+  },
+        {
+    id: "16",
+    names: "Shemgelena",
+    category: "Shemgelena",
+    date: "Mar 08 2026",
+    image: "/shemglinna1.jpg",
+  },
+       {
+    id: "17",
+    names: "Portrait",
+    category: "Portrait",
+    date: "Mar 08 2026",
+    image: "/other8.jpg",
+  },
 ]
 
 export default function PortfolioPage() {

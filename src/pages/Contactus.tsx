@@ -93,13 +93,13 @@ export function ContactPage() {
             </div>
 
             <div className="relative h-[500px] md:h-auto">
-            
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d9350.656719131393!2d38.72955!3d8.931504!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2set!4v1772706346815!5m2!1sen!2set"
-               className="w-full h-full border-0"
+                src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d9350.645484884402!2d38.728513!3d8.931942!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTUnNTUuMCJOIDM4wrA0Myc0Mi43IkU!5e1!3m2!1sen!2set!4v1773241438647!5m2!1sen!2set"
+                className="w-full h-full border-0"
                 loading="lazy"
                 title="Godolias Photography Location"
               ></iframe>
+                  
             </div>
           </div>
         </div>
